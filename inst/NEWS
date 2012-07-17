@@ -1,3 +1,10 @@
+Changes in version: SGPdata_2.0-0.0
+
+  o Updated YEAR in sgpData_LONG.
+  o Changed VALID_CASE, CONTENT_AREA, and YEAR to character from factor.
+  o Updated URL in CITATION to github.
+
+
 Changes in version: SGPdata_1.0-0.0
 
   o Package Released containing separate sgpData and sgpData_LONG data sets from SGP package.
