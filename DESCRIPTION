@@ -1,8 +1,8 @@
 Package: SGPdata
 Type: Package
 Title: Exemplar data sets for SGP analyses.
-Version: 2.0-0.0
-Date: 2012-7-20
+Version: 3.0-0.0
+Date: 2012-8-31
 Authors@R: c(person("Damian", "Betebenner", email="dbetebenner@nciea.org",
                 role=c("aut", "cre")),
             person("Adam", "Van Iwaarden", email="Vaniwaarden@colorado.edu",
