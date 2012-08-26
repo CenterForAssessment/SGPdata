@@ -4,11 +4,11 @@ citEntry(entry = "Manual",
          title        = "{SGPdata}: Exemplar data sets for SGP analyses.",
          author       = "Damian W. Betebenner and Adam Van Iwaarden and Ben Domingue",
          year         = "2012",
-         note         = "R package version 2.0-0.0",
+         note         = "R package version 3.0-0.0",
          url          = "http://studentgrowthpercentiles.github.com/SGP/",
          
          textVersion  = paste("Damian W. Betebenner, Adam Van Iwaarden and Ben Domingue (2012).",
                         "SGPdata: Exemplar data sets for SGP analyses.",
-                        "(R package version 2.0-0.0.",
+                        "(R package version 3.0-0.0.",
                         "URL http://studentgrowthpercentiles.github.com/SGP/")
 )
