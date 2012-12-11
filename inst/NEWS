@@ -1,3 +1,7 @@
+Changes in version: SGPdata_4.0-0.0
+
+  o Changed class of GRADE in sgpData_LONG to character.
+
 Changes in version: SGPdata_3.0-0.0
 
   o Changed class of ID in sgpData_LONG to character.
