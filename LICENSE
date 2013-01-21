@@ -1,6 +1,5 @@
 Use of this package for any purpose requires attribution: 
 
-Damian W. Betebenner (2012). 
-SGP: An R Package for the Calculation and Visualization of Student Growth Percentiles. 
-http://cran.r-project.org/web/packages/SGP/
+Damian W. Betebenner, Adam Van Iwaarden and Ben Domingue (2013). 
+SGPdata: Exemplar data set for SGP analyses. 
 http://cran.r-project.org/web/packages/SGPdata/

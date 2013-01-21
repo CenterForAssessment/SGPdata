@@ -35,8 +35,8 @@ across years with the results being used to produce a variety of high quality vi
     \item{\code{DISTRICT_NAME}}{District name associated with school number and student record}
     \item{\code{INSTRUCTOR_1_ENROLLMENT_STATUS}}{Indicator of enrollment status for instructor 1}
     \item{\code{INSTRUCTOR_2_ENROLLMENT_STATUS}}{Indicator of enrollment status for instructor 2}
-    \item{\code{INSTRUCTOR_1_WEIGHT}}{Proporational weight associated with instructor 1}
-    \item{\code{INSTRUCTOR_2_WEIGHT}}{Proporational weight associated with instructor 2}
+    \item{\code{INSTRUCTOR_1_WEIGHT}}{Proportional weight associated with instructor 1}
+    \item{\code{INSTRUCTOR_2_WEIGHT}}{Proportional weight associated with instructor 2}
     \item{\code{SCHOOL_ENROLLMENT_STATUS}}{Indicator of full academic year student enrollment in school}
     \item{\code{DISTRICT_ENROLLMENT_STATUS}}{Indicator of full academic year student enrollment in school}
     \item{\code{STATE_ENROLLMENT_STATUS}}{Indicator of full academic year student enrollment in school}
@@ -46,7 +46,7 @@ across years with the results being used to produce a variety of high quality vi
 
 \note{All datasets used with \code{studentGrowthPercentiles} and \code{studentGrowthProjections} must be specifically formatted as \emph{wide} format files. The first 
 variable/column is the student ID variable. The next set of columns provide the grade of the student across all the years provided in the dataset (possibly missing). 
-The last set of columns provide the scales scores of the student in the respective grades. Operational users of this package are advised to use data formated similar to the sgpData_LONG
+The last set of columns provide the scales scores of the student in the respective grades. Operational users of this package are advised to use data formatted similar to the sgpData_LONG
 with the higher level functions \code{prepareSGP}, \code{analyzeSGP}, \code{combineSGP}, \code{summarizeSGP}} 
 
 
