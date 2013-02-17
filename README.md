@@ -36,4 +36,4 @@ require(SGPdata)
 ```
 
 To install from Github you might need: Windows: Rtools (http://cran.r-project.org/bin/windows/Rtools/), OS X: xcode (from the app store),
-Linux: apt-get install r-base-dev (or similar)
+Linux: apt-get install r-base-dev (or similar).
