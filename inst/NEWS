@@ -1,3 +1,7 @@
+Changes in version: SGPdata_6.0-0.0
+
+  o Separated Instructor lookup data from sgpData_LONG to a separate table sgpData_INSTRUCTOR_NUMBER
+
 Changes in version: SGPdata_5.0-0.0
 
   o Updated CITATION and LICENSE
