@@ -1,6 +1,7 @@
 Changes in version: SGPdata_8.0-0.0
 
   o Changed GitHub URL for package in LICENSE
+  o Changed SCALE_SCORE in sgpData_LONG to class 'numeric'
 
 Changes in version: SGPdata_7.0-0.0
 
