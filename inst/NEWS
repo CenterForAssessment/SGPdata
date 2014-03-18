@@ -1,3 +1,7 @@
+Changes in version: SGPdata_9.0-0.0
+
+  o Bumped YEAR up one to 2013_2014
+
 Changes in version: SGPdata_8.0-0.0
 
   o Changed GitHub URL for package in LICENSE
@@ -28,7 +32,6 @@ Changes in version: SGPdata_2.0-0.0
   o Updated YEAR in sgpData_LONG.
   o Changed VALID_CASE, CONTENT_AREA, and YEAR to character from factor.
   o Updated URL in CITATION to github.
-
 
 Changes in version: SGPdata_1.0-0.0
 

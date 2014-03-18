@@ -3,9 +3,9 @@
 \docType{data}
 \title{Longitudinal Student Assessment Data in LONG format}
 \description{
-A dataset comprising a subset of five years of state assessment reading and mathematics data suitable for student growth percentile
+A dataset comprising a subset of five years of state assessment reading and mathematics data suitable for student growth percentile (SGP)
 and percentile growth projection/trajectory analyses. The dataset is in LONG format with each record representing a unique student, by 
-year by content area combination. The example is used examples and illustration in enclosed documentation to show how SGPs can be operationalized
+year by content area combination. The example data is used in examples and illustration in the enclosed documentation to show how SGPs can be operationalized
 across years with the results being used to produce a variety of high quality visualizations both at the aggregate (e.g., school) and individual level.
 }
 \usage{data(sgpData_LONG)}
@@ -41,7 +41,7 @@ across years with the results being used to produce a variety of high quality vi
 \note{All datasets used with \code{studentGrowthPercentiles} and \code{studentGrowthProjections} must be specifically formatted as \emph{wide} format files. The first 
 variable/column is the student ID variable. The next set of columns provide the grade of the student across all the years provided in the dataset (possibly missing). 
 The last set of columns provide the scales scores of the student in the respective grades. Operational users of this package are advised to use data formatted similar to the sgpData_LONG
-with the higher level functions \code{prepareSGP}, \code{analyzeSGP}, \code{combineSGP}, \code{summarizeSGP}} 
+with the higher level functions \code{prepareSGP}, \code{analyzeSGP}, \code{combineSGP}, \code{summarizeSGP}, \code{visualizeSGP}, and \code{outputSGP}} 
 
 
 \seealso{\code{\link{sgpData}}}
