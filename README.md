@@ -26,7 +26,7 @@ require(SGPdata)
 
 
 
-Install latest development release from [Github](https://github.com/CenterForAssessment/SGPdata/)
+Install latest development release from [Github](https://github.com/CenterForAssessment/SGPdata/) :octocat:
 ----------------------------------------------
 
 ```coffee 
