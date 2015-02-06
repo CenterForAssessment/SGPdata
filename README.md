@@ -19,7 +19,7 @@ The package is automatically installed when one installs the [SGP](https://githu
 To install the latest stable release from [CRAN](http://cran.r-project.org/package=SGPdata)
 ---------------------------
 
-```coffee
+```R
 install.packages("SGPdata")
 require(SGPdata)
 ```
@@ -29,10 +29,10 @@ require(SGPdata)
 Install latest development release from [Github](https://github.com/CenterForAssessment/SGPdata/) :octocat:
 ----------------------------------------------
 
-```coffee 
+```R 
 install.packages("devtools")
 require(devtools)
-install_github("SGPdata", "CenterForAssessment")
+install_github("CenterForAssessment/SGPdata")
 require(SGPdata)
 ```
 
