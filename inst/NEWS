@@ -1,6 +1,7 @@
 Changes in version: SGPdata_10.0-0.0
 
   o Changed ACHIEVEMENT_LEVEL to character to accomodate assessment transitions.
+  o Added version message to onLoad.
 
 Changes in version: SGPdata_9.0-0.0
 
