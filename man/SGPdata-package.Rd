@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab SGPdata\cr
 Type: \tab Package\cr
-Version: \tab 9.0-0.0\cr
-Date: \tab 2015-2-7\cr
+Version: \tab 10.0-0.0\cr
+Date: \tab 2015-2-25\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab Yes\cr
 LazyData: \tab Yes\cr
