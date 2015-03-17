@@ -1,8 +1,8 @@
 SGPdata 
-===
+=======
 
-Exemplar data sets for the SGP Package
------------------------------------------------------------------------
+Exemplar data sets for the [SGP Package](https://github.com/CenterForAssessment/SGP)
+------------------------------------------------------------------------------------
 
 The package **SGPdata** contains three data sets, **sgpData**,  **sgpData\_LONG**, and **sgpData_INSTRUCTOR_NUMBER** utilized by the 
 [SGP Package](https://github.com/CenterForAssessment/SGP/) as exemplars for users to set up their own data for SGP analyses.  The data set **sgpData** is a WIDE formatted data set 
