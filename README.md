@@ -10,7 +10,7 @@ whereas the data set **sgpData\_LONG** is a LONG formatted data set and **sgpDat
 to be produced. Wide data sets are used with the lower level functions [studentGrowthPercentiles](https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthPercentiles.R) and 
 [studentGrowthProjections](https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthProjections.R) but for operational analyses it is beneficial to have long formatted data. 
 
-[![Build Status](https://travis-ci.org/CenterForAssessment/SGPdata.svg?branch=master)](https://travis-ci.org/CenterForAssessment/SGPdata) [![Join the chat at https://gitter.im/CenterForAssessment/SGPdata](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPdata?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/CenterForAssessment/SGPdata.svg?branch=master)](https://travis-ci.org/CenterForAssessment/SGPdata) [![Join the chat at https://gitter.im/CenterForAssessment/SGPdata](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPdata?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](http://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPdata/blob/master/LICENSE.md)
 
 * [Github Web site](https://github.com/CenterForAssessment/SGPdata/)
 * [CRAN Web site](http://cran.r-project.org/package=SGPdata)
