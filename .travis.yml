@@ -1,2 +1,6 @@
 language: r
+
+r_github_packages:
+  - dbetebenner/SGP
+
 warnings_are_errors: true
