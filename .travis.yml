@@ -1,6 +1,10 @@
 language: r
+warnings_are_errors: true
 
 r_github_packages:
-  - dbetebenner/SGP
+ - dbetebenner/SGP 
 
-warnings_are_errors: true
+notifications:
+  email:
+    on_success: change
+    on_failure: change
