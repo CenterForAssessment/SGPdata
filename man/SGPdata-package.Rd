@@ -11,8 +11,8 @@
 Package: \tab SGPdata\cr
 Type: \tab Package\cr
 Version: \tab 10.0-0.0\cr
-Date: \tab 2015-2-25\cr
-License: \tab GPL-2\cr
+Date: \tab 2015-3-17\cr
+License: \tab GPL-3\cr
 LazyLoad: \tab Yes\cr
 LazyData: \tab Yes\cr
 }

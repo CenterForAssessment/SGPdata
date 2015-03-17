@@ -2,7 +2,7 @@ Package: SGPdata
 Type: Package
 Title: Exemplar Data Sets for SGP Analyses
 Version: 10.0-0.0
-Date: 2015-2-25
+Date: 2015-3-17
 Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
             person(given="Adam", family="Van Iwaarden", email="Vaniwaarden@colorado.edu", role="aut"),
             person(given="Ben", family="Domingue", email="ben.domingue@gmail.com", role="aut"))
@@ -13,4 +13,4 @@ Description:  The package SGPdata contains three data sets utilized by the SGP P
 URL: http://cran.r-project.org/web/packages/SGPdata/, https://github.com/CenterForAssessment/SGPdata
 LazyLoad: Yes
 LazyData: Yes
-License: GPL-2
+License: GPL-3
