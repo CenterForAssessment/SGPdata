@@ -5,6 +5,9 @@ r_github_packages:
  - dbetebenner/SGP 
 
 notifications:
-  email:
-    on_success: change
-    on_failure: change
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/3135ccebefffcd0ced90
+    on_success: always
+    on_failure: always
+    on_start: false
