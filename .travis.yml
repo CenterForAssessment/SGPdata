@@ -2,7 +2,7 @@ language: r
 warnings_are_errors: true
 
 r_github_packages:
- - dbetebenner/SGP 
+ - centerforassessment/SGP 
 
 notifications:
   webhooks:
