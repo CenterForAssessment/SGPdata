@@ -3,7 +3,8 @@ warnings_are_errors: true
 sudo: required
 
 r_github_packages:
- - centerforassessment/SGP 
+ - centerforassessment/SGP
+ - Rdatatable/data.table
 
 notifications:
   webhooks:
