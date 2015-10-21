@@ -12,18 +12,17 @@ across years with the results being used to produce a variety of high quality vi
 \format{
   A data frame of student level observations for five years and two content areas for the following variables.
   \describe{
-    \item{\code{COUNTRY}}{}
-    \item{\code{STATE}}{}
-    \item{\code{VALID_CASE}}{}
-    \item{\code{CONTENT_AREA}}{}
-    \item{\code{YEAR}}{}
-    \item{\code{DATE}}{}
-    \item{\code{ID}}{}
-    \item{\code{GRADE}}{}
-    \item{\code{SCALE_SCORE}}{}
-    \item{\code{SEM}}{}
-    \item{\code{OFFICIAL_WINDOW_SCORE}}{}
-    \item{\code{ACHIEVEMENT_LEVEL}}{}
+    \item{\code{COUNTRY}}{Variable indicating the COUNTRY associated with test record.}
+    \item{\code{STATE}}{State associated with the test record.}
+    \item{\code{VALID_CASE}}{VALID_CASE variable.}
+    \item{\code{CONTENT_AREA}}{Variable indicating content area associated with test record.}
+    \item{\code{YEAR}}{Variable indicating the year associated with the test record.}
+    \item{\code{DATE}}{Variable indicating the year associated with the test record: Must be in YYYY-MM-DD format.}
+    \item{\code{ID}}{Unique student identifier associated with test record.}
+    \item{\code{GRADE}}{Variable indicating the grade associated with the test record.}
+    \item{\code{SCALE_SCORE}}{Variable providing the scale score associated with the test record.}
+    \item{\code{SEM}}{Variable indicating the standard error of measurement associated with the scale score.}
+    \item{\code{ACHIEVEMENT_LEVEL}}{Variable indicating the achievement level associated with the scale score.}
   }
 }
 
