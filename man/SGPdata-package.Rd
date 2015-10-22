@@ -1,5 +1,6 @@
 \name{SGPdata-package}
 \alias{SGPdata-package}
+\alias{SGPdata}
 \docType{package}
 \title{Exemplar Data Sets for SGP Analyses}
 \description{
