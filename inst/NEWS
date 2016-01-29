@@ -1,3 +1,7 @@
+Changes in version: SGPdata_13.0-0.0
+
+  o Fixing start-up messages.
+
 Changes in version: SGPdata_12.0-0.0
 
   o Adding sgptData for modelling time dependent (SGPt) analyses.
