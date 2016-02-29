@@ -2,6 +2,7 @@ Changes in version: SGPdata_13.0-0.0
 
   o Fixing start-up messages.
   o Bumped YEAR up one to 2015_2016.
+  o Upped SGP dependency to 1.4-0.0.
 
 Changes in version: SGPdata_12.0-0.0
 
