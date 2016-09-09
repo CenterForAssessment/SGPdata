@@ -11,8 +11,8 @@
 \tabular{ll}{
 Package: \tab SGPdata\cr
 Type: \tab Package\cr
-Version: \tab 13.0-0.0\cr
-Date: \tab 2016-3-1\cr
+Version: \tab 14.0-0.0\cr
+Date: \tab 2016-9-9\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab Yes\cr
 LazyData: \tab Yes\cr
