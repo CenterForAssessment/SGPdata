@@ -1,3 +1,7 @@
+Changes in version: SGPdata_17.0-0.0
+
+  o Bumped YEAR up one to 2016_2017.
+
 Changes in version: SGPdata_16.0-0.0
 
   o Fixing up sgptData_LONG: Converting SCALE_SCORE from integer to numeric, rounding RASCH score to 4 decimals.
