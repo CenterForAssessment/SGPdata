@@ -1,0 +1,61 @@
+---
+title: "Getting started with SGPdata"
+author: "Damian W Betebenner"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with SGPdata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc}
+---
+
+```{r include = FALSE}
+library(SGPdata)
+is_html_output = function() {
+  knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+}
+knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "",
+    prompt=TRUE,
+    fig.dpi = 96
+			)
+if (is_html_output()) {
+    options(width=1000)
+}
+```
+
+# Introduction
+
+The **SGPdata** package contains 4 examplar data set for use with [student growth percentile (SGP)](https://sgp.io) analyses.
+One of the data sets, `sgpData`, specifies the proper format for use with the lower level [SGP](https://sgp.io) functions
+`studentGrowthPercentiles` and `studentGrowthProjections`.
+
+
+# WIDE data format
+
+```{r}
+head(sgpData)
+```
+
+
+# LONG data format
+
+
+```{r}
+head(sgpData_LONG)
+```
+
+## Basic SGP Examples
+
+The first argument, `n`, controls the number of names returned by the **SGPdata** function:
+
+```{r}
+head(sgpData)
+```
+
+
+
+# Contributions & Requests
+
+If you have contribution or a feature request for the **SGPdata** package, don't hesitate to write or set up an [issue on GitHub](https://github.com/CenterForAssessment/SGPdata/issues).
