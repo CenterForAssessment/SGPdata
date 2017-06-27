@@ -1,0 +1,48 @@
+template:
+  package: centerPackageTemplate
+  default_assets: false
+
+
+home:
+  strip_header: true
+  links:
+    - text: Other Center stuff
+      href: https://centerforassessment.github.io/
+
+
+navbar:
+    title: ~
+    type: default
+    left:
+    - text: Getting Started
+      href: articles/SGPdata.html
+    - text: Reference
+      href: reference/index.html
+    - text: News
+      menu:
+      - text: "Release notes"
+      - text: "Version 18.0-0.0"
+        href: articles/releases/SGPdata-18.0-0.0.html
+      - text: "Version 1.0-0.0"
+        href: articles/releases/SGPdata-1.0-0.0.html
+      - text: "------------------"
+      - text: "Change log"
+        href: news/index.html
+    right:
+      - icon: fa-github
+        href: https://github.com/centerforassessment/SGPdata
+      - icon: fa-twitter
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2C%20SGP
+
+
+reference:
+      - title: Data sets for lower level SGP functions
+        desc:  Wide exemplar data sets for use with lower level functions `studentGrowthPercentiles` and `studentGrowthProjections`.
+        contents:
+            - sgpData
+      - title: Data sets for higher level SGP functions
+        desc: Long exemplar data sets for use with higher level functions (e.g., `abcSGP` or `analyzeSGp`).
+        contents:
+            - sgpData_LONG
+            - sgptData_LONG
+            - sgpData_INSTRUCTOR_NUMBER

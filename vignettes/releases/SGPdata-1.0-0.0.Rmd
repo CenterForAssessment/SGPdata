@@ -1,0 +1,18 @@
+---
+title: "SGPdata 1.0-0.0"
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(comment = "#>", collapse = TRUE)
+```
+
+
+This is the initial release of the **SGPdata** package. The **SGPdata** package supports the [SGP](https://sgp.io) package by providing users with
+exemplar data sets to assist user in preparing their data for SGP analyses. 
+
+```r
+library(SGPdata)
+print(head(sgpData))
+```
+
+For complete `SGPdata` documentation, see the [documentation](https://CenterForAssessment.github.io/SGPdata/reference/SGPdata.html)
