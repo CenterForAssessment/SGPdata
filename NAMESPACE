@@ -1,2 +1,3 @@
+importFrom(crayon,bold,green,magenta,red,yellow)
 importFrom(utils,packageVersion)
 import(data.table)
