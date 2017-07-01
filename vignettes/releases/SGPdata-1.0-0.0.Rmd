@@ -2,17 +2,48 @@
 title: "SGPdata 1.0-0.0"
 ---
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(comment = "#>", collapse = TRUE)
+```{r include = FALSE}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
 ```
 
 
 This is the initial release of the **SGPdata** package. The **SGPdata** package supports the [SGP](https://sgp.io) package by providing users with
-exemplar data sets to assist user in preparing their data for SGP analyses. 
+exemplar data sets to assist user in preparing their data for SGP analyses.
 
-```r
-library(SGPdata)
-print(head(sgpData))
+The initial release contains two exemplar data sets: `sgpData` and `sgpData_LONG`.
+
+The data set `sgpData` is an anonymized, panel data set comprisong 5 years of annual assessment data in WIDE format. This exemplar data set specifies the format
+for data used with the lower level [`studentGrowthPercentiles`](https://sgp.io/reference/studentGrowthPercentiles.html) and
+[`studentGrowthProjections`](https://sgp.io/reference/studentGrowthProjections.html) functions.
+
+```{r}
+head(sgpData)
 ```
 
-For complete `SGPdata` documentation, see the [documentation](https://CenterForAssessment.github.io/SGPdata/reference/SGPdata.html)
+The data set `sgpData_LONG` is an anonymized, panel data set comprisong 5 years of annual assessment data in LONG format. This exemplar data set specifies the
+format for data used with the higher level functions [`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
+[`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html), [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html),
+[`visualizeSGP`](https://sgp.io/reference/visualizeSGP.html), and  [`outputSGP`](https://sgp.io/reference/outputSGP.html)
+
+```{r}
+head(sgpData_LONG)
+```
+
+The LONG data set `sgpData_LONG` also contains other personal information including demographic characteristics. These fields are not used in the
+calculation of SGPs but instead for calculating numberous aggregates including school, district, and demographics summaries.
+
+For complete `SGPdata` documentation, see the [getting started vignette](https://CenterForAssessment.github.io/SGPdata/articles/SGPdata.html) and the [documentation](https://CenterForAssessment.github.io/SGPdata/reference/SGPdata.html).

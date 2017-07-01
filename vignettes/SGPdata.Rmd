@@ -10,19 +10,21 @@ vignette: >
 ---
 
 ```{r include = FALSE}
-library(SGPdata)
-is_html_output = function() {
-  knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
-}
-knitr::opts_chunk$set(
-    collapse = TRUE,
-    comment = "",
-    prompt=TRUE,
-    fig.dpi = 96
-			)
-if (is_html_output()) {
-    options(width=1000)
-}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
 ```
 
 # Introduction
