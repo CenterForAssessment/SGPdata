@@ -34,26 +34,49 @@ One of the data sets, `sgpData`, specifies the proper format for use with the lo
 `studentGrowthPercentiles` and `studentGrowthProjections`.
 
 
-# WIDE data format
+# WIDE data format: sgpData
+
+The data set `sgpData` is an anonymized, panel data set comprisong 5 years of annual assessment data in WIDE format. This exemplar data set specifies the format
+for data used with the lower level [`studentGrowthPercentiles`](https://sgp.io/reference/studentGrowthPercentiles.html) and
+[`studentGrowthProjections`](https://sgp.io/reference/studentGrowthProjections.html) functions.
 
 ```{r}
 head(sgpData)
 ```
 
+Use of `sgpData` for SGP calculations is covered more extensively in the [SGP Documentation](https://sgp.io). However a simple example illustrates how `sgpData`
+is supplied to the `studentGrowthPercentiles` function.
 
-# LONG data format
+```
+> sgp_g4 <- studentGrowthPercentiles(
+		panel.data=sgpData,
+		sgp.labels=list(my.year=2015, my.subject="Reading"),
+		percentile.cuts=c(1,35,65,99),
+		grade.progression=c(3,4))
+```
 
+
+# LONG data format: sgpData_LONG
+
+The data set `sgpData_LONG` is an anonymized, panel data set comprisong 5 years of annual assessment data in LONG format. This exemplar data set specifies the
+format for data used with the higher level functions [`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
+[`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html), [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html),
+[`visualizeSGP`](https://sgp.io/reference/visualizeSGP.html), and  [`outputSGP`](https://sgp.io/reference/outputSGP.html)
 
 ```{r}
 head(sgpData_LONG)
 ```
 
-## Basic SGP Examples
-
-The first argument, `n`, controls the number of names returned by the **SGPdata** function:
+# LONG data format with time: sgptData_LONG
 
 ```{r}
-head(sgpData)
+head(sgptData_LONG)
+```
+
+# LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER
+
+```{r}
+head(sgpData_INSTRUCTOR_NUMBER)
 ```
 
 
