@@ -44,8 +44,8 @@ for data used with the lower level [`studentGrowthPercentiles`](https://sgp.io/r
 head(sgpData)
 ```
 
-Use of `sgpData` for SGP calculations is covered more extensively in the [SGP Documentation](https://sgp.io). However a simple example illustrates how `sgpData`
-is supplied to the `studentGrowthPercentiles` function.
+Use of `sgpData` for SGP calculations is covered more extensively in the [SGP Documentation](https://sgp.io). However a simple example illustrates how one supplies `sgpData`
+to the `studentGrowthPercentiles` function to show its use.
 
 ```
 > sgp_g4 <- studentGrowthPercentiles(
@@ -58,7 +58,7 @@ is supplied to the `studentGrowthPercentiles` function.
 
 # LONG data format: sgpData_LONG
 
-The data set `sgpData_LONG` is an anonymized, panel data set comprisong 5 years of annual assessment data in LONG format. This exemplar data set specifies the
+The data set `sgpData_LONG` is an anonymized, panel data set comprising 5 years of annual assessment data in LONG format. This exemplar data set specifies the
 format for data used with the higher level functions [`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
 [`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html), [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html),
 [`visualizeSGP`](https://sgp.io/reference/visualizeSGP.html), and  [`outputSGP`](https://sgp.io/reference/outputSGP.html)
@@ -69,11 +69,19 @@ head(sgpData_LONG)
 
 # LONG data format with time: sgptData_LONG
 
+The data set `sgptData_LONG` is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format. This data set is similar to the
+`sgpData_LONG` data set without the demographic variables and with an additional `DATE` variable indicating the date associated with the student assessment record.
+
+
 ```{r}
 head(sgptData_LONG)
 ```
 
 # LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER
+
+The data set `sgpData_INSTRUCTOR_NUMBER` is an anonymized, student-instructor lookup table that provides insturctor information associated with each students test record.
+Note that just as each teacher can (and will) have more than 1 student associated with them, a student can have more than one teacher associated with their test
+record. That is, multiple teachers could be assigned to the student in a single content area for a given year.
 
 ```{r}
 head(sgpData_INSTRUCTOR_NUMBER)
@@ -83,4 +91,4 @@ head(sgpData_INSTRUCTOR_NUMBER)
 
 # Contributions & Requests
 
-If you have contribution or a feature request for the **SGPdata** package, don't hesitate to write or set up an [issue on GitHub](https://github.com/CenterForAssessment/SGPdata/issues).
+If you have a contribution or feature request for the **SGPdata** package, don't hesitate to write or set up an [issue on GitHub](https://github.com/CenterForAssessment/SGPdata/issues).
