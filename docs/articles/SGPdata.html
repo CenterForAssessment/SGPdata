@@ -83,7 +83,7 @@
       <h1>Getting started with SGPdata</h1>
                         <h4 class="author">Damian W Betebenner</h4>
             
-            <h4 class="date">2017-06-30</h4>
+            <h4 class="date">2017-07-19</h4>
           </div>
 
     
@@ -106,7 +106,7 @@
 <span class="dv">4</span> <span class="dv">1000715</span>         <span class="ot">NA</span>         <span class="ot">NA</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>      <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">469</span>     <span class="dv">492</span>     <span class="dv">551</span>
 <span class="dv">5</span> <span class="dv">1000803</span>         <span class="ot">NA</span>          <span class="dv">5</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">558</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>
 <span class="dv">6</span> <span class="dv">1000957</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>          <span class="dv">8</span>         <span class="ot">NA</span>     <span class="dv">651</span>     <span class="dv">660</span>     <span class="dv">666</span>     <span class="dv">663</span>      <span class="ot">NA</span></code></pre></div>
-<p>Use of <code>sgpData</code> for SGP calculations is covered more extensively in the <a href="https://sgp.io">SGP Documentation</a>. However a simple example illustrates how <code>sgpData</code> is supplied to the <code>studentGrowthPercentiles</code> function.</p>
+<p>Use of <code>sgpData</code> for SGP calculations is covered more extensively in the <a href="https://sgp.io">SGP Documentation</a>. However a simple example illustrates how one supplies <code>sgpData</code> to the <code>studentGrowthPercentiles</code> function to show its use.</p>
 <pre><code>&gt; sgp_g4 &lt;- studentGrowthPercentiles(
         panel.data=sgpData,
         sgp.labels=list(my.year=2015, my.subject="Reading"),
@@ -116,7 +116,7 @@
 <div id="long-data-format-sgpdata_long" class="section level1">
 <h1 class="hasAnchor">
 <a href="#long-data-format-sgpdata_long" class="anchor"></a>LONG data format: sgpData_LONG</h1>
-<p>The data set <code>sgpData_LONG</code> is an anonymized, panel data set comprisong 5 years of annual assessment data in LONG format. This exemplar data set specifies the format for data used with the higher level functions <a href="https://sgp.io/reference/abcSGP.html"><code>abcSGP</code></a>, <a href="https://sgp.io/reference/prepareSGP.html"><code>prepareSGP</code></a>, <a href="https://sgp.io/reference/analyzeSGP.html"><code>analyzeSGP</code></a>, <a href="https://sgp.io/reference/combineSGP.html"><code>combineSGP</code></a>, <a href="https://sgp.io/reference/summarizeSGP.html"><code>summarizeSGP</code></a>, <a href="https://sgp.io/reference/visualizeSGP.html"><code>visualizeSGP</code></a>, and <a href="https://sgp.io/reference/outputSGP.html"><code>outputSGP</code></a></p>
+<p>The data set <code>sgpData_LONG</code> is an anonymized, panel data set comprising 5 years of annual assessment data in LONG format. This exemplar data set specifies the format for data used with the higher level functions <a href="https://sgp.io/reference/abcSGP.html"><code>abcSGP</code></a>, <a href="https://sgp.io/reference/prepareSGP.html"><code>prepareSGP</code></a>, <a href="https://sgp.io/reference/analyzeSGP.html"><code>analyzeSGP</code></a>, <a href="https://sgp.io/reference/combineSGP.html"><code>combineSGP</code></a>, <a href="https://sgp.io/reference/summarizeSGP.html"><code>summarizeSGP</code></a>, <a href="https://sgp.io/reference/visualizeSGP.html"><code>visualizeSGP</code></a>, and <a href="https://sgp.io/reference/outputSGP.html"><code>outputSGP</code></a></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">head</span>(sgpData_LONG)
         ID LAST_NAME FIRST_NAME CONTENT_AREA      YEAR GRADE SCALE_SCORE    ACHIEVEMENT_LEVEL       GENDER ETHNICITY FREE_REDUCED_LUNCH_STATUS ELL_STATUS IEP_STATUS GIFTED_AND_TALENTED_PROGRAM_STATUS SCHOOL_NUMBER                  SCHOOL_NAME  EMH_LEVEL DISTRICT_NUMBER                DISTRICT_NAME SCHOOL_ENROLLMENT_STATUS DISTRICT_ENROLLMENT_STATUS STATE_ENROLLMENT_STATUS VALID_CASE
 <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">1000372</span>   Daniels      Corey  MATHEMATICS 2014_<span class="dv">2015</span>     <span class="dv">3</span>         <span class="dv">435</span>           Proficient Gender<span class="op">:</span><span class="st"> </span>Male  Hispanic   Free Reduced Lunch<span class="op">:</span><span class="st"> </span>Yes   ELL<span class="op">:</span><span class="st"> </span>Yes    IEP<span class="op">:</span><span class="st"> </span>No    Gifted and Talented Program<span class="op">:</span><span class="st"> </span>No          <span class="dv">1851</span> Silk<span class="op">-</span>Royal Elementary School Elementary             <span class="dv">470</span> Apple Valley School District     Enrolled School<span class="op">:</span><span class="st"> </span>Yes     Enrolled District<span class="op">:</span><span class="st"> </span>Yes     Enrolled State<span class="op">:</span><span class="st"> </span>Yes VALID_CASE
@@ -129,6 +129,7 @@
 <div id="long-data-format-with-time-sgptdata_long" class="section level1">
 <h1 class="hasAnchor">
 <a href="#long-data-format-with-time-sgptdata_long" class="anchor"></a>LONG data format with time: sgptData_LONG</h1>
+<p>The data set <code>sgptData_LONG</code> is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format. This data set is similar to the <code>sgpData_LONG</code> data set without the demographic variables and with an additional <code>DATE</code> variable indicating the date associated with the student assessment record.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">head</span>(sgptData_LONG)
    VALID_CASE   CONTENT_AREA        YEAR        ID GRADE       DATE SCALE_SCORE SCALE_SCORE_RASCH COUNTRY STATE SEM ACHIEVEMENT_LEVEL
 <span class="dv">1</span><span class="op">:</span><span class="st"> </span>VALID_CASE EARLY_LITERACY 2014_<span class="fl">2015.2</span>  ANON_<span class="dv">130</span>   K.<span class="dv">2</span> <span class="dv">2015</span><span class="op">-</span><span class="dv">01</span><span class="op">-</span><span class="dv">14</span>         <span class="dv">622</span>            <span class="fl">0.3449</span>      US    OH  <span class="dv">55</span>                <span class="ot">NA</span>
@@ -141,6 +142,7 @@
 <div id="long-teacher-student-lookup-sgpdata_instructor_number" class="section level1">
 <h1 class="hasAnchor">
 <a href="#long-teacher-student-lookup-sgpdata_instructor_number" class="anchor"></a>LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER</h1>
+<p>The data set <code>sgpData_INSTRUCTOR_NUMBER</code> is an anonymized, student-instructor lookup table that provides insturctor information associated with each students test record. Note that just as each teacher can (and will) have more than 1 student associated with them, a student can have more than one teacher associated with their test record. That is, multiple teachers could be assigned to the student in a single content area for a given year.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">head</span>(sgpData_INSTRUCTOR_NUMBER)
         ID CONTENT_AREA      YEAR INSTRUCTOR_NUMBER INSTRUCTOR_LAST_NAME INSTRUCTOR_FIRST_NAME INSTRUCTOR_WEIGHT INSTRUCTOR_ENROLLMENT_STATUS
 <span class="dv">1</span><span class="op">:</span><span class="st"> </span><span class="dv">1000372</span>  MATHEMATICS 2014_<span class="dv">2015</span>         <span class="dv">185103004</span>                 Kang                Alexis               <span class="fl">1.0</span>     Enrolled Instructor<span class="op">:</span><span class="st"> </span>Yes
@@ -153,7 +155,7 @@
 <div id="contributions-requests" class="section level1">
 <h1 class="hasAnchor">
 <a href="#contributions-requests" class="anchor"></a>Contributions &amp; Requests</h1>
-<p>If you have contribution or a feature request for the <strong>SGPdata</strong> package, don’t hesitate to write or set up an <a href="https://github.com/CenterForAssessment/SGPdata/issues">issue on GitHub</a>.</p>
+<p>If you have a contribution or feature request for the <strong>SGPdata</strong> package, don’t hesitate to write or set up an <a href="https://github.com/CenterForAssessment/SGPdata/issues">issue on GitHub</a>.</p>
 </div>
 </div>
   </div>
