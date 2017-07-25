@@ -22,7 +22,7 @@ title: "SGPdata 1.0-0.0"
 
 
 This is the initial release of the **SGPdata** package. The **SGPdata** package supports the [SGP](https://sgp.io) package by providing users with
-exemplar data sets to assist user in preparing their data for SGP analyses.
+exemplar data sets to assist in the preparation of their data for SGP analyses.
 
 The initial release contains two exemplar data sets: `sgpData` and `sgpData_LONG`.
 
@@ -43,7 +43,7 @@ format for data used with the higher level functions [`abcSGP`](https://sgp.io/r
 head(sgpData_LONG)
 ```
 
-The LONG data set `sgpData_LONG` also contains other personal information including demographic characteristics. These fields are not used in the
-calculation of SGPs but instead for calculating numberous aggregates including school, district, and demographics summaries.
+The LONG data set `sgpData_LONG` also contains other personal information including student demographic characteristics. These fields are not used in the
+calculation of SGPs but instead for calculating numberous aggregates including school, district, and demographics summaries via [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html).
 
 For complete `SGPdata` documentation, see the [getting started vignette](https://CenterForAssessment.github.io/SGPdata/articles/SGPdata.html) and the [documentation](https://CenterForAssessment.github.io/SGPdata/reference/SGPdata.html).
