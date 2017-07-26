@@ -73,10 +73,11 @@ Please consult [SGP package documentation](https://sgp.io) for more comprehensiv
 
 # LONG data format: sgpData_LONG
 
-The data set `sgpData_LONG` is an anonymized, panel data set comprising 5 years of annual, vertcially scaled, assessment data in LONG format. This exemplar data set
-models the format for data used with the higher level functions [`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
-[`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html), [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html),
-[`visualizeSGP`](https://sgp.io/reference/visualizeSGP.html), and  [`outputSGP`](https://sgp.io/reference/outputSGP.html)
+The data set `sgpData_LONG` is an anonymized, panel data set comprising 5 years of annual, vertcially scaled, assessment data in LONG format for two content areas
+(ELA and Mathematics). This exemplar data set models the format for data used with the higher level functions
+[`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
+[`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html),
+[`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html), [`visualizeSGP`](https://sgp.io/reference/visualizeSGP.html), and  [`outputSGP`](https://sgp.io/reference/outputSGP.html)
 
 ```{r}
 head(sgpData_LONG)
@@ -94,16 +95,20 @@ and `ACHIEVEMENT_LEVEL` (on required if running student growth projections). `LA
 growth and achievement plots. All other variables are demographic/student categorization variables used for creating student aggregates by the
 [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html) function.
 
+The `sgpData_LONG` data set contains data for 5 years across 2 content areas (ELA and Mathematics)
 
 # LONG data format with time: sgptData_LONG
 
-The data set `sgptData_LONG` is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format. This data set is similar to the
-`sgpData_LONG` data set without the demographic variables and with an additional `DATE` variable indicating the date associated with the student assessment record.
+The data set `sgptData_LONG` is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format for 3 content areas
+(Early Literacy, Mathematics, and Reading). This data set is similar to the `sgpData_LONG` data set without the demographic variables and with an additional `DATE`
+variable indicating the date associated with the student assessment record.
 
 
 ```{r}
 head(sgptData_LONG)
 ```
+
+
 
 # LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER
 
