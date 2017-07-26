@@ -66,14 +66,14 @@ The package is automatically installed when one installs the [SGP](https://githu
 
 ```R
 > names(sgpData_LONG)
-[1] "ID"                                 "LAST_NAME"                          "FIRST_NAME"
-[4] "CONTENT_AREA"                       "YEAR"                               "GRADE"
-[7] "SCALE_SCORE"                        "ACHIEVEMENT_LEVEL"                  "GENDER"
-[10] "ETHNICITY"                          "FREE_REDUCED_LUNCH_STATUS"          "ELL_STATUS"
-[13] "IEP_STATUS"                         "GIFTED_AND_TALENTED_PROGRAM_STATUS" "SCHOOL_NUMBER"
-[16] "SCHOOL_NAME"                        "EMH_LEVEL"                          "DISTRICT_NUMBER"
-[19] "DISTRICT_NAME"                      "SCHOOL_ENROLLMENT_STATUS"           "DISTRICT_ENROLLMENT_STATUS"
-[22] "STATE_ENROLLMENT_STATUS"            "VALID_CASE"
+ [1] "VALID_CASE"                         "CONTENT_AREA"                       "YEAR"
+ [4] "ID"                                 "LAST_NAME"                          "FIRST_NAME"
+ [7] "GRADE"                              "SCALE_SCORE"                        "ACHIEVEMENT_LEVEL"
+[10] "GENDER"                             "ETHNICITY"                          "FREE_REDUCED_LUNCH_STATUS"
+[13] "ELL_STATUS"                         "IEP_STATUS"                         "GIFTED_AND_TALENTED_PROGRAM_STATUS"
+[16] "SCHOOL_NUMBER"                      "SCHOOL_NAME"                        "EMH_LEVEL"
+[19] "DISTRICT_NUMBER"                    "DISTRICT_NAME"                      "SCHOOL_ENROLLMENT_STATUS"
+[22] "DISTRICT_ENROLLMENT_STATUS"         "STATE_ENROLLMENT_STATUS"
 ```
 
 
