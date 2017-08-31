@@ -8,7 +8,6 @@ and percentile growth projection/trajectory analyses. The dataset is in LONG for
 year by content area combination. The example data is used in examples and illustration in the enclosed documentation to show how SGPs can be operationalized
 across years with the results being used to produce a variety of high quality visualizations both at the aggregate (e.g., school) and individual level.
 }
-\usage{data(sgpData_LONG)}
 \format{
   A data frame of student level observations for five years and two content areas for the following variables.
   \describe{

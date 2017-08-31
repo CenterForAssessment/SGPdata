@@ -1,3 +1,7 @@
+# SGPdata 19.0-0.0
+
+* Change sgpData from a data.frame to a data.table to maintain consistency with other data sets in the package.
+
 # SGPdata 18.0-0.0
 
 * Adding vignettes and building GitHub pages website.
