@@ -1,0 +1,27 @@
+---
+title: "SGPdata 19.0-0.0"
+---
+
+```{r include = FALSE}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
+```
+
+
+This is the 19.0 release of the **SGPdata** package. This release makes some minor modifications to the man pages and changes
+sgpData to a data.table to be consistent with the other data sets in the package. 
+
+Feel free to drop me a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!

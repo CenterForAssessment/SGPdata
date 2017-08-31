@@ -7,7 +7,6 @@ A lookup table comprising student IDs associated with INSTRUCTOR_NUMBERa subset 
 and percentile growth projection/trajectory analyses. The dataset is in LONG format with each record representing a unique teacher by student by 
 year by content area combination.
 }
-\usage{data(sgpData_INSTRUCTOR_NUMBER)}
 \format{
   A data frame of student level observations for five years and two content areas for the following variables.
   \describe{

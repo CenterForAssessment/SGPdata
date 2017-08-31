@@ -9,7 +9,6 @@ for the \code{studentGrowthPercentiles} and \cr
 \code{studentGrowthProjections} functions, and serves as an exemplar for user construction 
 of their own datasets for growth percentile analyses. 
 }
-\usage{data(sgpData)}
 \format{
   A data frame of student level observations for five years on the following variables.
   \describe{
