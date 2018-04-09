@@ -1,3 +1,7 @@
+# SGPdata 20.0-0.0
+
+* Bumped YEAR up one to 2017_2018.
+
 # SGPdata 19.0-0.0
 
 * Change sgpData from a data.frame to a data.table to maintain consistency with other data sets in the package.
