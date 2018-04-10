@@ -14,7 +14,7 @@ SGPdata
 # Overview
 
 The **SGPdata** package contains four exemplar data sets, `sgpData`,  `sgpData_LONG`, `sgptData_LONG` and `sgpData_INSTRUCTOR_NUMBER`
-utilized by the [SGP Package](https://CenterForAssessment.github.io/SGP/) as exemplars for users to set up their own data for SGP analyses.
+utilized by the [SGP Package](https://CenterForAssessment.github.io/SGP/) as exemplars for users to set up their own data for Student Growth Percentile (SGP) analyses.
 The data set `sgpData` is a WIDE formatted data set whereas the data sets `sgpData_LONG` and `sgptData_LONG` are LONG formatted data sets
 for fixed-time and time-dependent analyses, respectively. `sgpData_INSTRUCTOR_NUMBER` is a student-instructor look up table allowing for the production of
 teacher level summaries. Use WIDE data sets with the lower level functions
