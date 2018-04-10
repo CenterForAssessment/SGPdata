@@ -4,7 +4,7 @@
 \docType{package}
 \title{Exemplar Data Sets for Student Growth Percentile (SGP) Analyses}
 \description{
-	The package SGPdata contains four exemplar data sets utilized by the 'SGP' package for testing and examples.
+	The 'SGPdata' package contains four exemplar data sets utilized by the 'SGP' package for testing and examples.
 }
 
 \details{
