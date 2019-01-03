@@ -45,6 +45,9 @@
   <ul class="dropdown-menu" role="menu">
 <li class="dropdown-header">Release notes</li>
     <li>
+      <a href="articles/releases/SGPdata-21.0-0.0.html">SGPdata 21.0-0.0</a>
+    </li>
+    <li>
       <a href="articles/releases/SGPdata-20.0-0.0.html">SGPdata 20.0-0.0</a>
     </li>
     <li>
@@ -86,67 +89,60 @@
       </header><div class="row">
   <div class="contents col-md-9">
     
-<div id="sgpdata" class="section level1">
+<div class="section level1">
 
 
 </div>
-<div id="overview" class="section level1">
-<h1 class="hasAnchor">
-<a href="#overview" class="anchor"></a>Overview</h1>
+<div class="section level1">
+<h1>Overview</h1>
 <p>The <strong>SGPdata</strong> package contains four exemplar data sets, <code>sgpData</code>, <code>sgpData_LONG</code>, <code>sgptData_LONG</code> and <code>sgpData_INSTRUCTOR_NUMBER</code> utilized by the <a href="https://CenterForAssessment.github.io/SGP/">SGP Package</a> as exemplars for users to set up their own data for Student Growth Percentile (SGP) analyses. The data set <code>sgpData</code> is a WIDE formatted data set whereas the data sets <code>sgpData_LONG</code> and <code>sgptData_LONG</code> are LONG formatted data sets for fixed-time and time-dependent analyses, respectively. <code>sgpData_INSTRUCTOR_NUMBER</code> is a student-instructor look up table allowing for the production of teacher level summaries. Use WIDE data sets with the lower level functions <a href="https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthPercentiles.R">studentGrowthPercentiles</a> and <a href="https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthProjections.R">studentGrowthProjections</a> but for operational analyses use LONG formatted data.</p>
 </div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
-<div id="from-cran" class="section level2">
-<h2 class="hasAnchor">
-<a href="#from-cran" class="anchor"></a>From <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a>
+<div class="section level1">
+<h1>Installation</h1>
+<div class="section level2">
+<h2>From <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a>
 </h2>
 <p>To install the latest stable release of <strong>SGPdata</strong> from <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">install.packages</span>(<span class="st">"SGPdata"</span>)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">install.packages</span>(<span class="st">"SGPdata"</span>)</a></code></pre></div>
 </div>
-<div id="from-github" class="section level2">
-<h2 class="hasAnchor">
-<a href="#from-github" class="anchor"></a>From <a href="https://github.com/CenterForAssessment/SGPdata/">Github</a>
+<div class="section level2">
+<h2>From <a href="https://github.com/CenterForAssessment/SGPdata/">Github</a>
 </h2>
 <p>To install the development release of <strong>SGPdata</strong> from <a href="https://github.com/CenterForAssessment/SGPdata/">GitHub</a>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"CenterForAssessment/SGPdata"</span>)</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"CenterForAssessment/SGPdata"</span>)</a></code></pre></div>
 <p>The package is automatically installed when one installs the <a href="https://github.com/CenterForAssessment/SGP/">SGP</a> package.</p>
 </div>
 </div>
-<div id="resources" class="section level1">
-<h1 class="hasAnchor">
-<a href="#resources" class="anchor"></a>Resources</h1>
+<div class="section level1">
+<h1>Resources</h1>
 <ul>
 <li><a href="https://sgp.io">SGP GitHub Pages</a></li>
 <li><a href="https://CenterForAssessment.github.io/SGPdata">SGPdata GitHub Pages</a></li>
 <li><a href="https://CRAN.R-project.org/package=SGPdata">CRAN Repo</a></li>
 </ul>
 </div>
-<div id="usage" class="section level1">
-<h1 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">head</span>(sgpData)
-       ID GRADE_<span class="dv">2013</span> GRADE_<span class="dv">2014</span> GRADE_<span class="dv">2015</span> GRADE_<span class="dv">2016</span> GRADE_<span class="dv">2017</span> SS_<span class="dv">2013</span> SS_<span class="dv">2014</span> SS_<span class="dv">2015</span> SS_<span class="dv">2016</span> SS_<span class="dv">2017</span>
-<span class="dv">1</span> <span class="dv">1000185</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>          <span class="dv">7</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">520</span>
-<span class="dv">2</span> <span class="dv">1000486</span>          <span class="dv">3</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>     <span class="dv">524</span>     <span class="dv">548</span>     <span class="dv">607</span>     <span class="dv">592</span>     <span class="dv">656</span>
-<span class="dv">3</span> <span class="dv">1000710</span>          <span class="dv">8</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>     <span class="dv">713</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>
-<span class="dv">4</span> <span class="dv">1000715</span>         <span class="ot">NA</span>         <span class="ot">NA</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>      <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">469</span>     <span class="dv">492</span>     <span class="dv">551</span>
-<span class="dv">5</span> <span class="dv">1000803</span>         <span class="ot">NA</span>          <span class="dv">5</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">558</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>
-<span class="dv">6</span> <span class="dv">1000957</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>          <span class="dv">8</span>         <span class="ot">NA</span>     <span class="dv">651</span>     <span class="dv">660</span>     <span class="dv">666</span>     <span class="dv">663</span>      <span class="ot">NA</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">names</span>(sgpData_LONG)
- [<span class="dv">1</span>] <span class="st">"VALID_CASE"</span>                         <span class="st">"CONTENT_AREA"</span>                       <span class="st">"YEAR"</span>
- [<span class="dv">4</span>] <span class="st">"ID"</span>                                 <span class="st">"LAST_NAME"</span>                          <span class="st">"FIRST_NAME"</span>
- [<span class="dv">7</span>] <span class="st">"GRADE"</span>                              <span class="st">"SCALE_SCORE"</span>                        <span class="st">"ACHIEVEMENT_LEVEL"</span>
-[<span class="dv">10</span>] <span class="st">"GENDER"</span>                             <span class="st">"ETHNICITY"</span>                          <span class="st">"FREE_REDUCED_LUNCH_STATUS"</span>
-[<span class="dv">13</span>] <span class="st">"ELL_STATUS"</span>                         <span class="st">"IEP_STATUS"</span>                         <span class="st">"GIFTED_AND_TALENTED_PROGRAM_STATUS"</span>
-[<span class="dv">16</span>] <span class="st">"SCHOOL_NUMBER"</span>                      <span class="st">"SCHOOL_NAME"</span>                        <span class="st">"EMH_LEVEL"</span>
-[<span class="dv">19</span>] <span class="st">"DISTRICT_NUMBER"</span>                    <span class="st">"DISTRICT_NAME"</span>                      <span class="st">"SCHOOL_ENROLLMENT_STATUS"</span>
-[<span class="dv">22</span>] <span class="st">"DISTRICT_ENROLLMENT_STATUS"</span>         <span class="st">"STATE_ENROLLMENT_STATUS"</span></code></pre></div>
+<div class="section level1">
+<h1>Usage</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">head</span>(sgpData)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">       ID GRADE_<span class="dv">2015</span> GRADE_<span class="dv">2016</span> GRADE_<span class="dv">2017</span> GRADE_<span class="dv">2018</span> GRADE_<span class="dv">2019</span> SS_<span class="dv">2015</span> SS_<span class="dv">2016</span> SS_<span class="dv">2017</span> SS_<span class="dv">2018</span> SS_<span class="dv">2019</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="dv">1</span> <span class="dv">1000185</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>          <span class="dv">7</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">520</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="dv">2</span> <span class="dv">1000486</span>          <span class="dv">3</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>     <span class="dv">524</span>     <span class="dv">548</span>     <span class="dv">607</span>     <span class="dv">592</span>     <span class="dv">656</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="dv">3</span> <span class="dv">1000710</span>          <span class="dv">8</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>     <span class="dv">713</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="dv">4</span> <span class="dv">1000715</span>         <span class="ot">NA</span>         <span class="ot">NA</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>      <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">469</span>     <span class="dv">492</span>     <span class="dv">551</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="dv">5</span> <span class="dv">1000803</span>         <span class="ot">NA</span>          <span class="dv">5</span>         <span class="ot">NA</span>         <span class="ot">NA</span>         <span class="ot">NA</span>      <span class="ot">NA</span>     <span class="dv">558</span>      <span class="ot">NA</span>      <span class="ot">NA</span>      <span class="ot">NA</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="dv">6</span> <span class="dv">1000957</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>          <span class="dv">8</span>         <span class="ot">NA</span>     <span class="dv">651</span>     <span class="dv">660</span>     <span class="dv">666</span>     <span class="dv">663</span>      <span class="ot">NA</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">names</span>(sgpData_LONG)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"> [<span class="dv">1</span>] <span class="st">"VALID_CASE"</span>                         <span class="st">"CONTENT_AREA"</span>                       <span class="st">"YEAR"</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"> [<span class="dv">4</span>] <span class="st">"ID"</span>                                 <span class="st">"LAST_NAME"</span>                          <span class="st">"FIRST_NAME"</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"> [<span class="dv">7</span>] <span class="st">"GRADE"</span>                              <span class="st">"SCALE_SCORE"</span>                        <span class="st">"ACHIEVEMENT_LEVEL"</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">[<span class="dv">10</span>] <span class="st">"GENDER"</span>                             <span class="st">"ETHNICITY"</span>                          <span class="st">"FREE_REDUCED_LUNCH_STATUS"</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">[<span class="dv">13</span>] <span class="st">"ELL_STATUS"</span>                         <span class="st">"IEP_STATUS"</span>                         <span class="st">"GIFTED_AND_TALENTED_PROGRAM_STATUS"</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">[<span class="dv">16</span>] <span class="st">"SCHOOL_NUMBER"</span>                      <span class="st">"SCHOOL_NAME"</span>                        <span class="st">"EMH_LEVEL"</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">[<span class="dv">19</span>] <span class="st">"DISTRICT_NUMBER"</span>                    <span class="st">"DISTRICT_NAME"</span>                      <span class="st">"SCHOOL_ENROLLMENT_STATUS"</span></a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">[<span class="dv">22</span>] <span class="st">"DISTRICT_ENROLLMENT_STATUS"</span>         <span class="st">"STATE_ENROLLMENT_STATUS"</span></a></code></pre></div>
 </div>
-<div id="contributors" class="section level1">
-<h1 class="hasAnchor">
-<a href="#contributors" class="anchor"></a>Contributors</h1>
+<div class="section level1">
+<h1>Contributors</h1>
 <p>The <strong>SGPdata</strong> Package is crafted with ❤️ by:</p>
 <ul>
 <li><a href="https://github.com/dbetebenner">Damian Betebenner</a></li>
@@ -182,7 +178,7 @@
 <li><a href="https://travis-ci.org/CenterForAssessment/SGPdata"><img src="https://travis-ci.org/CenterForAssessment/SGPdata.svg?branch=master" alt="Build Status"></a></li>
 <li><a href="https://ci.appveyor.com/project/centerforassessment/SGPdata"><img src="https://ci.appveyor.com/api/projects/status/github/centerforassessment/SGPdata?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://cran.r-project.org/package=SGPdata"><img src="https://www.r-pkg.org/badges/version/SGPdata" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://github.com/CenterForAssessment/SGPdata"><img src="https://img.shields.io/badge/devel-20.0--0.0-brightgreen.svg" alt="Development Version"></a></li>
+<li><a href="https://github.com/CenterForAssessment/SGPdata"><img src="https://img.shields.io/badge/devel-21.0--0.0-brightgreen.svg" alt="Development Version"></a></li>
 <li><a href="https://github.com/metacran/cranlogs.app"><img src="https://cranlogs.r-pkg.org/badges/grand-total/SGPdata" alt="Rstudio mirror downloads"></a></li>
 <li><a href="https://github.com/CenterForAssessment/SGPdata/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat" alt="License"></a></li>
 <li><a href="https://gitter.im/CenterForAssessment/SGPdata?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/CenterForAssessment/SGPdata"></a></li>

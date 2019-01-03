@@ -1,0 +1,27 @@
+---
+title: "SGPdata 21.0-0.0"
+date: "January 1st, 2019"
+---
+
+```{r include = FALSE}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
+```
+
+
+This is the 21.0 release of the **SGPdata** package. This release bumps the YEAR up one making the final year in the data 2018_2019.
+
+Feel free to drop me a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!
