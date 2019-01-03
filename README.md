@@ -5,7 +5,7 @@ SGPdata
 [![Build Status](https://travis-ci.org/CenterForAssessment/SGPdata.svg?branch=master)](https://travis-ci.org/CenterForAssessment/SGPdata)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/centerforassessment/SGPdata?branch=master&svg=true)](https://ci.appveyor.com/project/centerforassessment/SGPdata)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/SGPdata)](https://cran.r-project.org/package=SGPdata)
-[![Development Version](https://img.shields.io/badge/devel-20.0--0.0-brightgreen.svg)](https://github.com/CenterForAssessment/SGPdata)
+[![Development Version](https://img.shields.io/badge/devel-21.0--0.0-brightgreen.svg)](https://github.com/CenterForAssessment/SGPdata)
 [![Rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/SGPdata)](https://github.com/metacran/cranlogs.app)
 [![License](https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat)](https://github.com/CenterForAssessment/SGPdata/blob/master/LICENSE.md)
 [![Join the chat at https://gitter.im/CenterForAssessment/SGPdata](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CenterForAssessment/SGPdata?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -55,7 +55,7 @@ The package is automatically installed when one installs the [SGP](https://githu
 
 ```R
 > head(sgpData)
-       ID GRADE_2013 GRADE_2014 GRADE_2015 GRADE_2016 GRADE_2017 SS_2013 SS_2014 SS_2015 SS_2016 SS_2017
+       ID GRADE_2015 GRADE_2016 GRADE_2017 GRADE_2018 GRADE_2019 SS_2015 SS_2016 SS_2017 SS_2018 SS_2019
 1 1000185         NA         NA         NA         NA          7      NA      NA      NA      NA     520
 2 1000486          3          4          5          6          7     524     548     607     592     656
 3 1000710          8         NA         NA         NA         NA     713      NA      NA      NA      NA

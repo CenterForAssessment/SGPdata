@@ -1,3 +1,7 @@
+# SGPdata 21.0-0.0
+
+* Bumped YEAR up one to 2018_2019.
+
 # SGPdata 20.0-0.0
 
 * Bumped YEAR up one to 2017_2018.
