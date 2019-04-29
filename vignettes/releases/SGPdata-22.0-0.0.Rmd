@@ -1,0 +1,27 @@
+---
+title: "SGPdata 22.0-0.0"
+date: "May 1st, 2019"
+---
+
+```{r include = FALSE}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
+```
+
+
+This is the 22.0 release of the **SGPdata** package. This release adds in READING_UNIFIED data to the sgptData_LONG package for testing purposes.
+
+Feel free to drop me a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!
