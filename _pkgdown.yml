@@ -21,6 +21,10 @@ navbar:
     - text: News
       menu:
       - text: "Release notes"
+      - text: "SGPdata 23.0-0.0"
+        href: articles/releases/SGPdata-23.0-0.0.html
+      - text: "SGPdata 22.0-0.0"
+        href: articles/releases/SGPdata-22.0-0.0.html
       - text: "SGPdata 21.0-0.0"
         href: articles/releases/SGPdata-21.0-0.0.html
       - text: "SGPdata 20.0-0.0"
