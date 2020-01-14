@@ -86,6 +86,12 @@
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Release notes</li>
     <li>
+      <a href="../articles/releases/SGPdata-23.0-0.0.html">SGPdata 23.0-0.0</a>
+    </li>
+    <li>
+      <a href="../articles/releases/SGPdata-22.0-0.0.html">SGPdata 22.0-0.0</a>
+    </li>
+    <li>
       <a href="../articles/releases/SGPdata-21.0-0.0.html">SGPdata 21.0-0.0</a>
     </li>
     <li>
@@ -132,60 +138,51 @@
     <h1>Longitudinal Student Assessment Data</h1>
     </div>
 
-    
     <p>A dataset comprising a subset of five years of state assessment reading data suitable for student growth percentile
 and percentile growth projection/trajectory analyses. The dataset is used in examples provided in the documentation
 for the <code>studentGrowthPercentiles</code> and 
 <code>studentGrowthProjections</code> functions, and serves as an exemplar for user construction 
 of their own datasets for growth percentile analyses.</p>
-    
 
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame of student level observations for five years on the following variables.</p><dl class='dl-horizontal'>
     <dt><code>ID</code></dt><dd><p>Student ID</p></dd>
-    <dt><code>GRADE_2015</code></dt><dd><p>Student Grade Tested 2015, possibly missing</p></dd>
     <dt><code>GRADE_2016</code></dt><dd><p>Student Grade Tested 2016, possibly missing</p></dd>
     <dt><code>GRADE_2017</code></dt><dd><p>Student Grade Tested 2017, possibly missing</p></dd>
     <dt><code>GRADE_2018</code></dt><dd><p>Student Grade Tested 2018, possibly missing</p></dd>
     <dt><code>GRADE_2019</code></dt><dd><p>Student Grade Tested 2019, possibly missing</p></dd>
-    <dt><code>SS_2015</code></dt><dd><p>Student Scale Score 2015, possibly missing</p></dd>
+    <dt><code>GRADE_2020</code></dt><dd><p>Student Grade Tested 2020, possibly missing</p></dd>
     <dt><code>SS_2016</code></dt><dd><p>Student Scale Score 2016, possibly missing</p></dd>
     <dt><code>SS_2017</code></dt><dd><p>Student Scale Score 2017, possibly missing</p></dd>
     <dt><code>SS_2018</code></dt><dd><p>Student Scale Score 2018, possibly missing</p></dd>
     <dt><code>SS_2019</code></dt><dd><p>Student Scale Score 2019, possibly missing</p></dd>
+    <dt><code>SS_2020</code></dt><dd><p>Student Scale Score 2020, possibly missing</p></dd>
   </dl>
-    
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
     <p>All datasets used with <code>studentGrowthPercentiles</code> and <code>studentGrowthProjections</code> must be specifically formatted as <em>wide</em> format files. The first 
 variable/column is the student ID variable. The next set of columns provide the grade of the student across all the years provided in the dataset (possibly missing). 
 The last set of columns provide the scales scores of the student in the respective grades. Multi-year operational analyses benefit from putting data in long format.
 See <code>sgpData_LONG</code> and associated documentation for a comprehensive account.</p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <p><code><a href='sgpData_LONG.html'>sgpData_LONG</a></code></p>
-    
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Anonymized student level state assessment data</p>
-    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      
       <li><a href="#format">Format</a></li>
-
       <li><a href="#note">Note</a></li>
-
       <li><a href="#see-also">See also</a></li>
-
       <li><a href="#source">Source</a></li>
-          </ul>
+    </ul>
 
   </div>
 </div>

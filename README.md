@@ -55,7 +55,7 @@ The package is automatically installed when one installs the [SGP](https://githu
 
 ```R
 > head(sgpData)
-       ID GRADE_2015 GRADE_2016 GRADE_2017 GRADE_2018 GRADE_2019 SS_2015 SS_2016 SS_2017 SS_2018 SS_2019
+       ID GRADE_2016 GRADE_2017 GRADE_2018 GRADE_2019 GRADE_2020 SS_2016 SS_2017 SS_2018 SS_2019 SS_2020
 1 1000185         NA         NA         NA         NA          7      NA      NA      NA      NA     520
 2 1000486          3          4          5          6          7     524     548     607     592     656
 3 1000710          8         NA         NA         NA         NA     713      NA      NA      NA      NA
