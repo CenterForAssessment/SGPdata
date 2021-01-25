@@ -1,3 +1,12 @@
+# SGPdata 24.0-0.0
+
+* Bumped YEAR up one to 2020_2021.
+* Add sgpData_LONG_COVID to help with modeling situations related to the COVID-19 pandemic that lead to the cancellation of spring testing in the United States in 2020.
+
+# SGPdata 23.0-0.0
+
+* Bumped YEAR up one to 2019_2020.
+
 # SGPdata 22.0-0.0
 
 * Added READING_UNIFIED content area to sgptData_LONG.

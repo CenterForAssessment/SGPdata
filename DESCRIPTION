@@ -1,13 +1,13 @@
 Package: SGPdata
 Type: Package
 Title: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses
-Version: 23.0-0.0
-Date: 2020-1-15
+Version: 24.0-0.0
+Date: 2021-1-25
 Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
             person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@nciea.com", role="aut"),
             person(given="Ben", family="Domingue", email="ben.domingue@gmail.com", role="aut"))
 Maintainer: Damian W. Betebenner <dbetebenner@nciea.org>
-Depends: R (>= 3.6)
+Depends: R (>= 4.0)
 Suggests: SGP (>= 1.9-0.0), knitr, rmarkdown
 Imports: crayon, data.table (>= 1.9.6)
 Description:  Data sets utilized by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses.
