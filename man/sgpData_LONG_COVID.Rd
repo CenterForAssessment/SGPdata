@@ -16,6 +16,7 @@ both at the aggregate (e.g., school) and individual level.
     \item{\code{CONTENT_AREA}}{Content area for student observation (ELA or Mathematics)}
     \item{\code{YEAR}}{Year for student observation}
     \item{\code{ID}}{Unique Student Identification Number}
+    \item{\code{IEP_STATUS}}{Student Individual Education Plan status}
     \item{\code{GRADE}}{Grade level of student observation}
     \item{\code{SCALE_SCORE}}{Student Scale Score}
     \item{\code{ACHIEVEMENT_LEVEL}}{Achievement level associated with student scale score}
@@ -24,7 +25,6 @@ both at the aggregate (e.g., school) and individual level.
     \item{\code{ETHNICITY}}{Student ethnicity}
     \item{\code{FREE_REDUCED_LUNCH_STATUS}}{Student free/reduced lunch status}
     \item{\code{ELL_STATUS}}{Student English Language Learner status}
-    \item{\code{SPECIAL_EDUCATION_STATUS}}{Student Individual Education Plan status}
     \item{\code{GENDER}}{Student gender}
     \item{\code{SCHOOL_NUMBER}}{School number associated with student record}
     \item{\code{SCHOOL_NAME}}{School name associated with school number and student record}
