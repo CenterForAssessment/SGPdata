@@ -1,0 +1,28 @@
+---
+title: "SGPdata 25.0-0.0"
+date: "April 15th, 2021"
+---
+
+```{r include = FALSE}
+    library(SGPdata)
+
+    is_html_output = function() {
+        knitr::opts_knit$get("rmarkdown.pandoc.to")=="html"
+    }
+
+    knitr::opts_chunk$set(
+        collapse=TRUE,
+        comment="",
+        prompt=TRUE,
+        fig.dpi=96)
+
+    if (is_html_output()) {
+        options(width=1000)
+    }
+```
+
+
+This is the 25.0 release of the **SGPdata** package. This release adds minor updates to the **sgpData_LONG_COVID** data set which is used as a simulation data set to test out 
+several situations currently confronting states as they think about calculating student growth using spring 2021 data. 
+
+Feel free to drop us a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!

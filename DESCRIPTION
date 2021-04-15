@@ -1,8 +1,8 @@
 Package: SGPdata
 Type: Package
 Title: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses
-Version: 24.1-0.0
-Date: 2021-4-1
+Version: 25.0-0.0
+Date: 2021-4-15
 Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
             person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@nciea.com", role="aut"),
             person(given="Ben", family="Domingue", email="ben.domingue@gmail.com", role="aut"))
@@ -16,4 +16,5 @@ BugReports: https://github.com/CenterForAssessment/SGPdata/issues
 VignetteBuilder: knitr
 LazyLoad: Yes
 LazyData: Yes
+LazyDataCompression: xz
 License: GPL-3

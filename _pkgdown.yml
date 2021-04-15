@@ -21,6 +21,8 @@ navbar:
     - text: News
       menu:
       - text: "Release notes"
+      - text: "SGPdata 25.0-0.0"
+        href: articles/releases/SGPdata-25.0-0.0.html
       - text: "SGPdata 24.0-0.0"
         href: articles/releases/SGPdata-24.0-0.0.html
       - text: "SGPdata 23.0-0.0"
@@ -41,10 +43,10 @@ navbar:
       - text: "Change log"
         href: news/index.html
     right:
-      - icon: fa-github
+      - icon: 'fab fa-github'
         href: https://github.com/centerforassessment/SGPdata
-      - icon: fa-twitter
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2C%20SGP
+      - icon: 'fab fa-twitter'
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2CSGP
 
 
 reference:
