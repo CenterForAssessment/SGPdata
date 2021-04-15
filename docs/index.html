@@ -129,14 +129,14 @@
 <a href="#from-cran" class="anchor"></a>From <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a>
 </h2>
 <p>To install the latest stable release of <strong>SGPdata</strong> from <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"SGPdata"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"SGPdata"</span>)</span></code></pre></div>
 </div>
 <div id="from-github" class="section level2">
 <h2 class="hasAnchor">
 <a href="#from-github" class="anchor"></a>From <a href="https://github.com/CenterForAssessment/SGPdata/">Github</a>
 </h2>
 <p>To install the development release of <strong>SGPdata</strong> from <a href="https://github.com/CenterForAssessment/SGPdata/">GitHub</a>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"CenterForAssessment/SGPdata"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"CenterForAssessment/SGPdata"</span>)</span></code></pre></div>
 <p>The package is automatically installed when one installs the <a href="https://github.com/CenterForAssessment/SGP/">SGP</a> package.</p>
 </div>
 </div>
@@ -152,7 +152,7 @@
 <div id="usage" class="section level1">
 <h1 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData)</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>       ID GRADE_2016 GRADE_2017 GRADE_2018 GRADE_2019 GRADE_2020 SS_2016 SS_2017 SS_2018 SS_2019 SS_2020</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="dv">1000185</span>         <span class="cn">NA</span>         <span class="cn">NA</span>         <span class="cn">NA</span>         <span class="cn">NA</span>          <span class="dv">7</span>      <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>     <span class="dv">520</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="dv">1000486</span>          <span class="dv">3</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>     <span class="dv">524</span>     <span class="dv">548</span>     <span class="dv">607</span>     <span class="dv">592</span>     <span class="dv">656</span></span>
@@ -160,7 +160,7 @@
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="dv">1000715</span>         <span class="cn">NA</span>         <span class="cn">NA</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span>      <span class="cn">NA</span>      <span class="cn">NA</span>     <span class="dv">469</span>     <span class="dv">492</span>     <span class="dv">551</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="dv">1000803</span>         <span class="cn">NA</span>          <span class="dv">5</span>         <span class="cn">NA</span>         <span class="cn">NA</span>         <span class="cn">NA</span>      <span class="cn">NA</span>     <span class="dv">558</span>      <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span> <span class="dv">1000957</span>          <span class="dv">5</span>          <span class="dv">6</span>          <span class="dv">7</span>          <span class="dv">8</span>         <span class="cn">NA</span>     <span class="dv">651</span>     <span class="dv">660</span>     <span class="dv">666</span>     <span class="dv">663</span>      <span class="cn">NA</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">names</span>(sgpData_LONG)</span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">names</span>(sgpData_LONG)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> [<span class="dv">1</span>] <span class="st">"VALID_CASE"</span>                         <span class="st">"CONTENT_AREA"</span>                       <span class="st">"YEAR"</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a> [<span class="dv">4</span>] <span class="st">"ID"</span>                                 <span class="st">"LAST_NAME"</span>                          <span class="st">"FIRST_NAME"</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> [<span class="dv">7</span>] <span class="st">"GRADE"</span>                              <span class="st">"SCALE_SCORE"</span>                        <span class="st">"ACHIEVEMENT_LEVEL"</span></span>
