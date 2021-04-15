@@ -29,7 +29,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
@@ -86,6 +86,9 @@
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Release notes</li>
     <li>
+      <a href="../articles/releases/SGPdata-25.0-0.0.html">SGPdata 25.0-0.0</a>
+    </li>
+    <li>
       <a href="../articles/releases/SGPdata-24.0-0.0.html">SGPdata 24.0-0.0</a>
     </li>
     <li>
@@ -117,13 +120,13 @@
 </li>
         <li>
   <a href="https://github.com/centerforassessment/SGPdata">
-    <span class="fa fa-github"></span>
+    <span class="fab fa-github"></span>
      
   </a>
 </li>
 <li>
-   <a style="cursor:pointer" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2C%20SGP','','scrollbars=0,menubar=0,height=300,width=600,resizable=0,toolbar=0,location=0,status=0')">
-    <span class="fa fa-twitter"></span>
+   <a style="cursor:pointer" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2CSGP','','scrollbars=0,menubar=0,height=300,width=600,resizable=0,toolbar=0,location=0,status=0')">
+    <span class="fab fa-twitter"></span>
      
   </a>
 </li>
@@ -143,8 +146,8 @@
 
     <p>A dataset comprising a subset of seven years of state assessment ELA and mathematics data across an 8 year span suitable for student growth percentile (SGP)
 and percentile growth projection/trajectory analyses. The dataset is missing 2020 data to help users model COVID related interuptions to student growth.
-The dataset is in LONG format with each record representing a unique student, by year by content area combination. The example data is used in examples and 
-illustration in the enclosed documentation to show how SGPs can be operationalized across years with the results being used to produce a variety of high quality visualizations 
+The dataset is in LONG format with each record representing a unique student, by year by content area combination. The example data is used in examples and
+illustration in the enclosed documentation to show how SGPs can be operationalized across years with the results being used to produce a variety of high quality visualizations
 both at the aggregate (e.g., school) and individual level.</p>
 
 
@@ -156,32 +159,33 @@ both at the aggregate (e.g., school) and individual level.</p>
     <dt><code>CONTENT_AREA</code></dt><dd><p>Content area for student observation (ELA or Mathematics)</p></dd>
     <dt><code>YEAR</code></dt><dd><p>Year for student observation</p></dd>
     <dt><code>ID</code></dt><dd><p>Unique Student Identification Number</p></dd>
+    <dt><code>IEP_STATUS</code></dt><dd><p>Student Individual Education Plan status</p></dd>
     <dt><code>GRADE</code></dt><dd><p>Grade level of student observation</p></dd>
     <dt><code>SCALE_SCORE</code></dt><dd><p>Student Scale Score</p></dd>
     <dt><code>ACHIEVEMENT_LEVEL</code></dt><dd><p>Achievement level associated with student scale score</p></dd>
+    <dt><code>PRIOR_SCORE_1_YEAR</code></dt><dd><p>Student scale score from 1 year prior (if available)</p></dd>
+    <dt><code>PRIOR_SCORE_2_YEAR</code></dt><dd><p>Student scale score from 2 years prior (if available)</p></dd>
     <dt><code>ETHNICITY</code></dt><dd><p>Student ethnicity</p></dd>
     <dt><code>FREE_REDUCED_LUNCH_STATUS</code></dt><dd><p>Student free/reduced lunch status</p></dd>
     <dt><code>ELL_STATUS</code></dt><dd><p>Student English Language Learner status</p></dd>
-    <dt><code>SPECIAL_EDUCATION_STATUS</code></dt><dd><p>Student Individual Education Plan status</p></dd>
     <dt><code>GENDER</code></dt><dd><p>Student gender</p></dd>
     <dt><code>SCHOOL_NUMBER</code></dt><dd><p>School number associated with student record</p></dd>
     <dt><code>SCHOOL_NAME</code></dt><dd><p>School name associated with school number and student record</p></dd>
-    <dt><code>EMH_LEVEL</code></dt><dd><p>Elementary, Middle, High school indicator for school attended</p></dd>
     <dt><code>DISTRICT_NUMBER</code></dt><dd><p>District number associated with student record</p></dd>
     <dt><code>DISTRICT_NAME</code></dt><dd><p>District name associated with school number and student record</p></dd>
   </dl>
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
-    <p>All datasets used with <code>studentGrowthPercentiles</code> and <code>studentGrowthProjections</code> must be specifically formatted as <em>wide</em> format files. The first 
-variable/column is the student ID variable. The next set of columns provide the grade of the student across all the years provided in the dataset (possibly missing). 
-The last set of columns provide the scales scores of the student in the respective grades. Operational users of this package are advised to use data formatted similar to 
+    <p>All datasets used with <code>studentGrowthPercentiles</code> and <code>studentGrowthProjections</code> must be specifically formatted as <em>wide</em> format files. The first
+variable/column is the student ID variable. The next set of columns provide the grade of the student across all the years provided in the dataset (possibly missing).
+The last set of columns provide the scales scores of the student in the respective grades. Operational users of this package are advised to use data formatted similar to
 the sgpData_LONG_COVID with the higher level functions <code>prepareSGP</code>, <code>analyzeSGP</code>, <code>combineSGP</code>, <code>summarizeSGP</code>, <code>visualizeSGP</code>, and <code>outputSGP</code></p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <p><code><a href='sgpData_LONG.html'>sgpData_LONG</a></code></p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Anonymized student level state assessment data in LONG format</p>
+    <p>Anonymized and altered student level state assessment data in LONG format</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
