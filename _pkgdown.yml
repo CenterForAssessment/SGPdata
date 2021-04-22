@@ -46,7 +46,7 @@ navbar:
       - icon: 'fab fa-github'
         href: https://github.com/centerforassessment/SGPdata
       - icon: 'fab fa-twitter'
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2F&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2CSGP
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FSGPdata%2Findex.html&via=NCIEA1&text=SGPdata%3A%20Exemplar%20Data%20Sets%20for%20SGP%20Analyses&hashtags=rstats%2CSGP
 
 
 reference:
