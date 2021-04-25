@@ -2,7 +2,7 @@ SGPdata
 =======
 
 
-[![Build Status](https://travis-ci.org/CenterForAssessment/SGPdata.svg?branch=master)](https://travis-ci.org/CenterForAssessment/SGPdata)
+[![R-CMD-check](https://github.com/CenterForAssessment/SGPdata/workflows/R-CMD-check/badge.svg)](https://github.com/CenterForAssessment/SGPdata/actions)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/centerforassessment/SGPdata?branch=master&svg=true)](https://ci.appveyor.com/project/centerforassessment/SGPdata)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/SGPdata)](https://cran.r-project.org/package=SGPdata)
 [![Development Version](https://img.shields.io/badge/devel-25.1--0.0-brightgreen.svg)](https://github.com/CenterForAssessment/SGPdata)
