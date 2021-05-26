@@ -19,6 +19,7 @@ both at the aggregate (e.g., school) and individual level.
     \item{\code{IEP_STATUS}}{Student Individual Education Plan status}
     \item{\code{GRADE}}{Grade level of student observation}
     \item{\code{SCALE_SCORE}}{Student Scale Score}
+    \item{\code{SCALE_SCORE_with_COVID_IMPACT}}{Student Scale Score with COVID impact}
     \item{\code{ACHIEVEMENT_LEVEL}}{Achievement level associated with student scale score}
     \item{\code{ETHNICITY}}{Student ethnicity}
     \item{\code{FREE_REDUCED_LUNCH_STATUS}}{Student free/reduced lunch status}
