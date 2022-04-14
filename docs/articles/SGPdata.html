@@ -48,7 +48,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     News
      
     <span class="caret"></span>
@@ -109,26 +109,29 @@
 <!--/.navbar -->
 
       
-      </header><script src="SGPdata_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
+      </header><script src="SGPdata_files/header-attrs-2.13/header-attrs.js"></script><link href="SGPdata_files/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet">
+<link href="SGPdata_files/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet">
+<script src="SGPdata_files/anchor-sections-1.1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9">
     <div class="page-header toc-ignore">
       <h1>Getting started with SGPdata</h1>
                         <h4 class="author">Damian W Betebenner</h4>
             
-            <h4 class="date">April 24th, 2021</h4>
           </div>
 
     
     
 <div class="contents">
-<div id="introduction" class="section level1">
+<div id="introduction" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#introduction" class="anchor"></a>Introduction</h1>
+<a href="#introduction" class="anchor" aria-hidden="true"></a>Introduction<a href="#introduction" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>The <strong>SGPdata</strong> package contains 4 examplar data set for use with <a href="https://sgp.io">student growth percentile (SGP)</a> analyses. One of the data sets, <code>sgpData</code>, specifies data in the WIDE format that’s used with the lower level <a href="https://sgp.io">SGP</a> functions <code>studentGrowthPercentiles</code> and <code>studentGrowthProjections</code>. Two of the data sets, <code>sgpData_LONG</code> and <code>sgptData_LONG</code> specify data in the LONG format used by higher level functions like <code>abcSGP</code>, <code>prepareSGP</code>, and <code>analyzeSGP</code>. The last data set, <code>sgpData_INSTRUCTOR_NUMBER</code> is a teacher-student lookup table utilized to produce teacher level aggregates. The sections that follow discuss each of the 4 data sets in greater depth.</p>
 </div>
-<div id="wide-data-format-sgpdata" class="section level1">
+<div id="wide-data-format-sgpdata" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#wide-data-format-sgpdata" class="anchor"></a>WIDE data format: sgpData</h1>
+<a href="#wide-data-format-sgpdata" class="anchor" aria-hidden="true"></a>WIDE data format: sgpData<a href="#wide-data-format-sgpdata" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>The data set <code>sgpData</code> is an anonymized, panel data set comprisong 5 years of annual, vertically scaled, assessment data in WIDE format. This exemplar data set models the format for data used with the lower level <a href="https://sgp.io/reference/studentGrowthPercentiles.html"><code>studentGrowthPercentiles</code></a> and <a href="https://sgp.io/reference/studentGrowthProjections.html"><code>studentGrowthProjections</code></a> functions.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        ID GRADE_2017 GRADE_2018 GRADE_2019 GRADE_2020 GRADE_2021 SS_2017 SS_2018 SS_2019 SS_2020 SS_2021</span>
@@ -153,9 +156,10 @@
         grade.progression=c(3,4))</code></pre>
 <p>Please consult <a href="https://sgp.io">SGP package documentation</a> for more comprehensive documentation on how to use <code>sgpData</code> for SGP calculations.</p>
 </div>
-<div id="long-data-format-sgpdata_long" class="section level1">
+<div id="long-data-format-sgpdata_long" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#long-data-format-sgpdata_long" class="anchor"></a>LONG data format: sgpData_LONG</h1>
+<a href="#long-data-format-sgpdata_long" class="anchor" aria-hidden="true"></a>LONG data format: sgpData_LONG<a href="#long-data-format-sgpdata_long" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>The data set <code>sgpData_LONG</code> is an anonymized, panel data set comprising 5 years of annual, vertcially scaled, assessment data in LONG format for two content areas (ELA and Mathematics). This exemplar data set models the format for data used with the higher level functions <a href="https://sgp.io/reference/abcSGP.html"><code>abcSGP</code></a>, <a href="https://sgp.io/reference/prepareSGP.html"><code>prepareSGP</code></a>, <a href="https://sgp.io/reference/analyzeSGP.html"><code>analyzeSGP</code></a>, <a href="https://sgp.io/reference/combineSGP.html"><code>combineSGP</code></a>, <a href="https://sgp.io/reference/summarizeSGP.html"><code>summarizeSGP</code></a>, <a href="https://sgp.io/reference/visualizeSGP.html"><code>visualizeSGP</code></a>, and <a href="https://sgp.io/reference/outputSGP.html"><code>outputSGP</code></a></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData_LONG)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>   VALID_CASE CONTENT_AREA      YEAR      ID LAST_NAME FIRST_NAME GRADE SCALE_SCORE    ACHIEVEMENT_LEVEL       GENDER ETHNICITY FREE_REDUCED_LUNCH_STATUS ELL_STATUS IEP_STATUS GIFTED_AND_TALENTED_PROGRAM_STATUS SCHOOL_NUMBER                  SCHOOL_NAME  EMH_LEVEL DISTRICT_NUMBER                DISTRICT_NAME SCHOOL_ENROLLMENT_STATUS DISTRICT_ENROLLMENT_STATUS STATE_ENROLLMENT_STATUS</span>
@@ -169,9 +173,10 @@
 <p>There are 7 <em>required</em> variables when using LONG data with SGP analyses: <code>VALID_CASE</code>, <code>CONTENT_AREA</code>, <code>YEAR</code>, <code>ID</code>, <code>SCALE_SCORE</code>, <code>GRADE</code> and <code>ACHIEVEMENT_LEVEL</code> (on required if running student growth projections). <code>LAST_NAME</code> and <code>FIRST_NAME</code> are required if creating individual level student growth and achievement plots. All other variables are demographic/student categorization variables used for creating student aggregates by the <a href="https://sgp.io/reference/summarizeSGP.html"><code>summarizeSGP</code></a> function.</p>
 <p>The <code>sgpData_LONG</code> data set contains data for 5 years across 2 content areas (ELA and Mathematics)</p>
 </div>
-<div id="long-data-format-with-time-sgptdata_long" class="section level1">
+<div id="long-data-format-with-time-sgptdata_long" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#long-data-format-with-time-sgptdata_long" class="anchor"></a>LONG data format with time: sgptData_LONG</h1>
+<a href="#long-data-format-with-time-sgptdata_long" class="anchor" aria-hidden="true"></a>LONG data format with time: sgptData_LONG<a href="#long-data-format-with-time-sgptdata_long" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>The data set <code>sgptData_LONG</code> is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format for 3 content areas (Early Literacy, Mathematics, and Reading). This data set is similar to the <code>sgpData_LONG</code> data set without the demographic variables and with an additional <code>DATE</code> variable indicating the date associated with the student assessment record.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgptData_LONG)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>   VALID_CASE   CONTENT_AREA        YEAR        ID GRADE       DATE SCALE_SCORE SCALE_SCORE_RASCH COUNTRY STATE SEM ACHIEVEMENT_LEVEL</span>
@@ -182,9 +187,10 @@
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="sc">:</span> VALID_CASE EARLY_LITERACY 2014_2015<span class="fl">.2</span> ANON_1498   K<span class="fl">.2</span> <span class="dv">2015-01-09</span>         <span class="dv">577</span>           <span class="sc">-</span><span class="fl">0.0129</span>      US    IL  <span class="dv">57</span>              <span class="sc">&lt;</span><span class="cn">NA</span><span class="sc">&gt;</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span><span class="sc">:</span> VALID_CASE EARLY_LITERACY 2014_2015<span class="fl">.2</span> ANON_1533   K<span class="fl">.2</span> <span class="dv">2015-01-23</span>         <span class="dv">443</span>           <span class="sc">-</span><span class="fl">1.2131</span>      US    IL  <span class="dv">38</span>              <span class="sc">&lt;</span><span class="cn">NA</span><span class="sc">&gt;</span></span></code></pre></div>
 </div>
-<div id="long-teacher-student-lookup-sgpdata_instructor_number" class="section level1">
+<div id="long-teacher-student-lookup-sgpdata_instructor_number" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#long-teacher-student-lookup-sgpdata_instructor_number" class="anchor"></a>LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER</h1>
+<a href="#long-teacher-student-lookup-sgpdata_instructor_number" class="anchor" aria-hidden="true"></a>LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER<a href="#long-teacher-student-lookup-sgpdata_instructor_number" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>The data set <code>sgpData_INSTRUCTOR_NUMBER</code> is an anonymized, student-instructor lookup table that provides insturctor information associated with each students test record. Note that just as each teacher can (and will) have more than 1 student associated with them, a student can have more than one teacher associated with their test record. That is, multiple teachers could be assigned to the student in a single content area for a given year.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData_INSTRUCTOR_NUMBER)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>        ID CONTENT_AREA      YEAR INSTRUCTOR_NUMBER INSTRUCTOR_LAST_NAME INSTRUCTOR_FIRST_NAME INSTRUCTOR_WEIGHT INSTRUCTOR_ENROLLMENT_STATUS</span>
@@ -195,9 +201,10 @@
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="sc">:</span> <span class="dv">1000372</span>      READING 2017_2018         <span class="dv">185103003</span>               Mccord             Guadalupe               <span class="fl">1.0</span>     Enrolled Instructor<span class="sc">:</span> Yes</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span><span class="sc">:</span> <span class="dv">1000372</span>      READING 2018_2019         <span class="dv">185104001</span>               Rivera               Kailynn               <span class="fl">0.7</span>     Enrolled Instructor<span class="sc">:</span> Yes</span></code></pre></div>
 </div>
-<div id="contributions-requests" class="section level1">
+<div id="contributions-requests" class="section level1 hasAnchor">
 <h1 class="hasAnchor">
-<a href="#contributions-requests" class="anchor"></a>Contributions &amp; Requests</h1>
+<a href="#contributions-requests" class="anchor" aria-hidden="true"></a>Contributions &amp; Requests<a href="#contributions-requests" class="anchor-section" aria-label="Anchor link to header"></a>
+</h1>
 <p>If you have a contribution or feature request for the <strong>SGPdata</strong> package, don’t hesitate to write or set up an <a href="https://github.com/CenterForAssessment/SGPdata/issues">issue on GitHub</a>.</p>
 </div>
 </div>
@@ -208,12 +215,12 @@
         <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li><a href="#introduction">Introduction</a></li>
-      <li><a href="#wide-data-format-sgpdata">WIDE data format: sgpData</a></li>
-      <li><a href="#long-data-format-sgpdata_long">LONG data format: sgpData_LONG</a></li>
-      <li><a href="#long-data-format-with-time-sgptdata_long">LONG data format with time: sgptData_LONG</a></li>
-      <li><a href="#long-teacher-student-lookup-sgpdata_instructor_number">LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER</a></li>
-      <li><a href="#contributions-requests">Contributions &amp; Requests</a></li>
+<li><a href="#introduction">Introduction<span></span></a></li>
+      <li><a href="#wide-data-format-sgpdata">WIDE data format: sgpData<span></span></a></li>
+      <li><a href="#long-data-format-sgpdata_long">LONG data format: sgpData_LONG<span></span></a></li>
+      <li><a href="#long-data-format-with-time-sgptdata_long">LONG data format with time: sgptData_LONG<span></span></a></li>
+      <li><a href="#long-teacher-student-lookup-sgpdata_instructor_number">LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER<span></span></a></li>
+      <li><a href="#contributions-requests">Contributions &amp; Requests<span></span></a></li>
       </ul>
 </div>
       </div>
@@ -226,7 +233,7 @@
 </div>
 
 <div class="author">
-  <p>Developed &amp; Maintained by <a href="https://github.com/dbetebenner"><img src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a>, <a href="https://github.com/adamvi"><img src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> &amp; <a href="https://github.com/ben-domingue"><img src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a>.</p>
+  <p>Developed &amp; Maintained by <a href="https://github.com/dbetebenner"><img class="img-author" src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a>, <a href="https://github.com/adamvi"><img class="img-author" src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> &amp; <a href="https://github.com/ben-domingue"><img class="img-author" src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a>.</p>
 </div>
 
 <script>
