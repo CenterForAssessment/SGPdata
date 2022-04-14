@@ -48,7 +48,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     News
      
     <span class="caret"></span>
@@ -118,22 +118,22 @@
 </div>
 <div id="overview" class="section level1">
 <h1 class="hasAnchor">
-<a href="#overview" class="anchor"></a>Overview</h1>
+<a href="#overview" class="anchor" aria-hidden="true"></a>Overview</h1>
 <p>The <strong>SGPdata</strong> package contains four exemplar data sets, <code>sgpData</code>, <code>sgpData_LONG</code>, <code>sgptData_LONG</code> and <code>sgpData_INSTRUCTOR_NUMBER</code> utilized by the <a href="https://CenterForAssessment.github.io/SGP/">SGP Package</a> as exemplars for users to set up their own data for Student Growth Percentile (SGP) analyses. The data set <code>sgpData</code> is a WIDE formatted data set whereas the data sets <code>sgpData_LONG</code> and <code>sgptData_LONG</code> are LONG formatted data sets for fixed-time and time-dependent analyses, respectively. <code>sgpData_INSTRUCTOR_NUMBER</code> is a student-instructor look up table allowing for the production of teacher level summaries. Use WIDE data sets with the lower level functions <a href="https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthPercentiles.R">studentGrowthPercentiles</a> and <a href="https://github.com/CenterForAssessment/SGP/blob/master/R/studentGrowthProjections.R">studentGrowthProjections</a> but for operational analyses use LONG formatted data.</p>
 </div>
 <div id="installation" class="section level1">
 <h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
+<a href="#installation" class="anchor" aria-hidden="true"></a>Installation</h1>
 <div id="from-cran" class="section level2">
 <h2 class="hasAnchor">
-<a href="#from-cran" class="anchor"></a>From <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a>
+<a href="#from-cran" class="anchor" aria-hidden="true"></a>From <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a>
 </h2>
 <p>To install the latest stable release of <strong>SGPdata</strong> from <a href="https://CRAN.R-project.org/package=SGPdata">CRAN</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"SGPdata"</span>)</span></code></pre></div>
 </div>
 <div id="from-github" class="section level2">
 <h2 class="hasAnchor">
-<a href="#from-github" class="anchor"></a>From <a href="https://github.com/CenterForAssessment/SGPdata/">Github</a>
+<a href="#from-github" class="anchor" aria-hidden="true"></a>From <a href="https://github.com/CenterForAssessment/SGPdata/">Github</a>
 </h2>
 <p>To install the development release of <strong>SGPdata</strong> from <a href="https://github.com/CenterForAssessment/SGPdata/">GitHub</a>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"CenterForAssessment/SGPdata"</span>)</span></code></pre></div>
@@ -142,7 +142,7 @@
 </div>
 <div id="resources" class="section level1">
 <h1 class="hasAnchor">
-<a href="#resources" class="anchor"></a>Resources</h1>
+<a href="#resources" class="anchor" aria-hidden="true"></a>Resources</h1>
 <ul>
 <li><a href="https://sgp.io">SGP GitHub Pages</a></li>
 <li><a href="https://CenterForAssessment.github.io/SGPdata">SGPdata GitHub Pages</a></li>
@@ -151,7 +151,7 @@
 </div>
 <div id="usage" class="section level1">
 <h1 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h1>
+<a href="#usage" class="anchor" aria-hidden="true"></a>Usage</h1>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">head</span>(sgpData)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>       ID GRADE_2016 GRADE_2017 GRADE_2018 GRADE_2019 GRADE_2020 SS_2016 SS_2017 SS_2018 SS_2019 SS_2020</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="dv">1000185</span>         <span class="cn">NA</span>         <span class="cn">NA</span>         <span class="cn">NA</span>         <span class="cn">NA</span>          <span class="dv">7</span>      <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>      <span class="cn">NA</span>     <span class="dv">520</span></span>
@@ -172,7 +172,7 @@
 </div>
 <div id="contributors" class="section level1">
 <h1 class="hasAnchor">
-<a href="#contributors" class="anchor"></a>Contributors</h1>
+<a href="#contributors" class="anchor" aria-hidden="true"></a>Contributors</h1>
 <p>The <strong>SGPdata</strong> Package is crafted with <span class="emoji" data-emoji="heart">❤️</span> by:</p>
 <ul>
 <li><a href="https://github.com/dbetebenner">Damian Betebenner</a></li>
@@ -188,11 +188,11 @@
     <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://github.com/dbetebenner"><img src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a> <br><small class="roles"> Author, maintainer </small> </li>
+<a href="https://github.com/dbetebenner"><img class="img-author" src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a> <br><small class="roles"> Author, maintainer </small> </li>
 <li>
-<a href="https://github.com/adamvi"><img src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> <br><small class="roles"> Author </small> </li>
+<a href="https://github.com/adamvi"><img class="img-author" src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> <br><small class="roles"> Author </small> </li>
 <li>
-<a href="https://github.com/ben-domingue"><img src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a> <br><small class="roles"> Author </small> </li>
+<a href="https://github.com/ben-domingue"><img class="img-author" src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a> <br><small class="roles"> Author </small> </li>
 </ul>
 <h2>License</h2>
 <p><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></p>
@@ -208,7 +208,7 @@
 <li><a href="https://github.com/CenterForAssessment/SGPdata/actions"><img src="https://github.com/CenterForAssessment/SGPdata/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://ci.appveyor.com/project/centerforassessment/SGPdata"><img src="https://ci.appveyor.com/api/projects/status/github/centerforassessment/SGPdata?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://cran.r-project.org/package=SGPdata"><img src="https://www.r-pkg.org/badges/version/SGPdata" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://github.com/CenterForAssessment/SGPdata"><img src="https://img.shields.io/badge/devel-25.1--0.0-brightgreen.svg" alt="Development Version"></a></li>
+<li><a href="https://github.com/CenterForAssessment/SGPdata"><img src="https://img.shields.io/badge/devel-25.2--0.0-brightgreen.svg" alt="Development Version"></a></li>
 <li><a href="https://github.com/metacran/cranlogs.app"><img src="https://cranlogs.r-pkg.org/badges/grand-total/SGPdata" alt="Rstudio mirror downloads"></a></li>
 <li><a href="https://github.com/CenterForAssessment/SGPdata/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL%203-brightgreen.svg?style=flat" alt="License"></a></li>
 <li><a href="https://gitter.im/CenterForAssessment/SGPdata?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/CenterForAssessment/SGPdata"></a></li>
@@ -222,7 +222,7 @@
 </div>
 
 <div class="author">
-  <p>Developed &amp; Maintained by <a href="https://github.com/dbetebenner"><img src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a>, <a href="https://github.com/adamvi"><img src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> &amp; <a href="https://github.com/ben-domingue"><img src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a>.</p>
+  <p>Developed &amp; Maintained by <a href="https://github.com/dbetebenner"><img class="img-author" src="https://centerforassessment.github.io/assets/dbetebenner.png" height="20"> Damian W. Betebenner</a>, <a href="https://github.com/adamvi"><img class="img-author" src="https://centerforassessment.github.io/assets/adamvi.png" height="20"> Adam R. Van Iwaarden</a> &amp; <a href="https://github.com/ben-domingue"><img class="img-author" src="https://avatars2.githubusercontent.com/u/1353244" height="20"> Ben Domingue</a>.</p>
 </div>
 
 <script>
