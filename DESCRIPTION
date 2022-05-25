@@ -1,8 +1,8 @@
 Package: SGPdata
 Type: Package
 Title: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses
-Version: 25.2-0.0
-Date: 2021-5-26
+Version: 26.0-0.0
+Date: 2022-5-24
 Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
             person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@nciea.com", role="aut"),
             person(given="Ben", family="Domingue", email="ben.domingue@gmail.com", role="aut"))
@@ -11,8 +11,8 @@ Depends: R (>= 4.0)
 Suggests: SGP (>= 1.9-0.0), knitr, rmarkdown
 Imports: crayon, data.table (>= 1.9.6)
 Description:  Data sets utilized by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses.
-URL: https://CenterForAssessment.github.io/SGPdata, https://github.com/CenterForAssessment/SGPdata, https://cran.r-project.org/package=SGPdata
-BugReports: https://github.com/CenterForAssessment/SGPdata/issues
+URL: https://CenterForAssessment.github.io/SGPdata/, https://github.com/CenterForAssessment/SGPdata/, https://cran.r-project.org/package=SGPdata
+BugReports: https://github.com/CenterForAssessment/SGPdata/issues/
 VignetteBuilder: knitr
 LazyLoad: Yes
 LazyData: Yes
