@@ -1,3 +1,7 @@
+# SGPdata 26.0-0.0
+
+* Updating YEAR to 2021_2022
+
 # SGPdata 25.0-0.0
 
 * Minor fixes to sgpData_LONG_COVID to make is more representative.
