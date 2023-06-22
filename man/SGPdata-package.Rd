@@ -12,7 +12,7 @@
 Package: \tab SGPdata\cr
 Type: \tab Package\cr
 Version: \tab 26.0-0.0\cr
-Date: \tab 2022-5-24\cr
+Date: \tab 2022-5-26\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab Yes\cr
 LazyData: \tab Yes\cr
