@@ -13,16 +13,16 @@ of their own datasets for growth percentile analyses.
   A data frame of student level observations for five years on the following variables.
   \describe{
     \item{\code{ID}}{Student ID}
-    \item{\code{GRADE_2018}}{Student Grade Tested 2018, possibly missing}
     \item{\code{GRADE_2019}}{Student Grade Tested 2019, possibly missing}
     \item{\code{GRADE_2020}}{Student Grade Tested 2020, possibly missing}
     \item{\code{GRADE_2021}}{Student Grade Tested 2021, possibly missing}
     \item{\code{GRADE_2022}}{Student Grade Tested 2022, possibly missing}
-    \item{\code{SS_2018}}{Student Scale Score 2018, possibly missing}
+    \item{\code{GRADE_2023}}{Student Grade Tested 2023, possibly missing}
     \item{\code{SS_2019}}{Student Scale Score 2019, possibly missing}
     \item{\code{SS_2020}}{Student Scale Score 2020, possibly missing}
     \item{\code{SS_2021}}{Student Scale Score 2021, possibly missing}
     \item{\code{SS_2022}}{Student Scale Score 2022, possibly missing}
+    \item{\code{SS_2023}}{Student Scale Score 2023, possibly missing}
   }
 }
 
