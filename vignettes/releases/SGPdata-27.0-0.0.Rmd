@@ -22,7 +22,13 @@ date: "October 17th, 2023"
 ```
 
 
-This is the 27.0-0.0 release of the **SGPdata** package. This release auguments the year number to 2023 for the 
-data sets. 
+This is the 27.0-0.0 release of the **SGPdata** package posted to CRAN. This 
+[GitHub tagged release](https://github.com/CenterForAssessment/SGPdata/releases/tag/e7d537e) can be downloaded via:
+
+This release basically auguments the year number to 2023 for the data sets. 
+
+```{r eval=FALSE}
+devtools::install_github("CenterForAssessment/SGPdata", ref="e7d537e")
+```
 
 Feel free to drop us a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!
