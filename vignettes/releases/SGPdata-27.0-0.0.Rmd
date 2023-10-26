@@ -1,6 +1,6 @@
 ---
 title: "SGPdata 27.0-0.0"
-date: "June 21st, 2023"
+date: "October 17th, 2023"
 ---
 
 ```{r include = FALSE}
@@ -22,8 +22,7 @@ date: "June 21st, 2023"
 ```
 
 
-This is the 26.0 release of the **SGPdata** package. This release auguments the year number to 2022 for the data sets. In addition, this release adds 
-updates to the **sgpData_LONG_COVID** data set which is used as a simulation data set to test out several situations currently confronting states as they 
-think about calculating student growth using spring 2021 data. 
+This is the 27.0-0.0 release of the **SGPdata** package. This release auguments the year number to 2023 for the 
+data sets. 
 
 Feel free to drop us a line with any comments, feature requests, or ideas. And give us a shout-out Tweet using the Twitter button in the upper right!
