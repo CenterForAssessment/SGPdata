@@ -9,7 +9,7 @@ Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebe
 Maintainer: Damian W. Betebenner <dbetebenner@nciea.org>
 Depends: R (>= 4.0)
 Suggests: SGP (>= 1.9-0.0), knitr, rmarkdown
-Imports: crayon, data.table (>= 1.14.0), toOrdinal
+Imports: crayon, data.table (>= 1.14.0), pkgsearch, toOrdinal
 Description:  Data sets utilized by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses.
 URL: https://CenterForAssessment.github.io/SGPdata/, https://github.com/CenterForAssessment/SGPdata/, https://cran.r-project.org/package=SGPdata
 BugReports: https://github.com/CenterForAssessment/SGPdata/issues/
