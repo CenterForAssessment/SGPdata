@@ -32,7 +32,7 @@ function(libname, pkgname) {
 
         # Define a friendly startup message
 		message_text <- paste0(
-		    magenta(bold("\uD83C\uDF89 SGPdata v", installed.version, sep="")), " - ", toOrdinal::toOrdinalDate("2024-12-4"), "\n",
+		    magenta(bold("\uD83C\uDF89 SGPdata v", installed.version, sep="")), " - ", toOrdinal::toOrdinalDate("2025-4-17"), "\n",
 			strrep("\u2501", 40), "\n",
     	    bold("\U1F4E6 CRAN: "), cran.version, "\n",
     	    bold("\U1F527 Dev: "), dev.version, "\n",
@@ -40,7 +40,7 @@ function(libname, pkgname) {
 		    "\U1F4A1 Tip: ", magenta(bold("> help(package=\"SGPdata\")")), "\n",
 		    "\U1F310 Docs: ", magenta(bold("https://centerforassessment.github.io/SGPdata")), "\n",
 			strrep("\u2501", 40), "\n",
-		    "\u2728 Happy SGPing!")
+		    "\u2728 Happy SGPing!", "\n")
 
         # Display the startup message
         packageStartupMessage(message_text)

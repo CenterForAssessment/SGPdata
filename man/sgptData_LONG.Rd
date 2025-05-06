@@ -21,7 +21,8 @@ across years with the results being used to produce a variety of high quality vi
     \item{\code{GRADE}}{Variable indicating the grade associated with the test record.}
     \item{\code{SCALE_SCORE}}{Variable providing the scale score associated with the test record.}
     \item{\code{SCALE_SCORE_RASCH}}{Variable providing the Rasch score associated with the test record.}
-    \item{\code{SEM}}{Variable indicating the standard error of measurement associated with the scale score.}
+    \item{\code{SCALE_SCORE_CSEM}}{Variable indicating the standard error of measurement associated with the scale score.}
+    \item{\code{SCALE_SCORE_RASCH_CSEM}}{Variable indicating the standard error of measurement associated with the Rasch score.}
     \item{\code{ACHIEVEMENT_LEVEL}}{Variable indicating the achievement level associated with the scale score.}
   }
 }
