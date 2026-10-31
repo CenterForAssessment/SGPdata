@@ -1,0 +1,8 @@
+---
+title: "SGPdata 29.0-0.0"
+date: "October 31st, 2026"
+---
+
+This is the 29.0-0.0 release of the **SGPdata** package. It moves the data sets forward to the 2024_2025 year, extends `sgptData_LONG` to nine year/window periods, and adds tests that pin every data set so a change to the data is always deliberate.
+
+See the [news](../../news.html) for the full list of changes.

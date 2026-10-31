@@ -1,0 +1,106 @@
+---
+title: "sgpData_LONG_COVID"
+subtitle: "Longitudinal student assessment data in LONG format with the 2020 COVID-19 interruption"
+toc: true
+---
+
+## Format
+
+A `data.table` of student-level observations for seven years (across an eight-year span) and two content areas with 17 variables:
+
+`VALID_CASE`
+
+:   Indicator of whether the case is valid or invalid
+
+`CONTENT_AREA`
+
+:   Content area for student observation (ELA or Mathematics)
+
+`YEAR`
+
+:   Year for student observation
+
+`ID`
+
+:   Unique Student Identification Number
+
+`GRADE`
+
+:   Grade level of student observation
+
+`SCALE_SCORE`
+
+:   Student Scale Score
+
+`SCALE_SCORE_without_COVID_IMPACT`
+
+:   Student Scale Score without COVID impact. Original scale score
+
+`ACHIEVEMENT_LEVEL`
+
+:   Achievement level associated with student scale score
+
+`ETHNICITY`
+
+:   Student ethnicity
+
+`FREE_REDUCED_LUNCH_STATUS`
+
+:   Student free/reduced lunch status
+
+`ELL_STATUS`
+
+:   Student English Language Learner status
+
+`IEP_STATUS`
+
+:   Student Individual Education Plan status
+
+`GENDER`
+
+:   Student gender
+
+`SCHOOL_NUMBER`
+
+:   School number associated with student record
+
+`SCHOOL_NAME`
+
+:   School name associated with school number and student record
+
+`DISTRICT_NUMBER`
+
+:   District number associated with student record
+
+`DISTRICT_NAME`
+
+:   District name associated with school number and student record
+
+## Source
+
+Anonymised student level state assessment data in LONG format.
+
+## Usage
+
+``` R
+sgpData_LONG_COVID
+```
+
+## Description
+
+A subset of seven years of state assessment ELA and mathematics data across an eight-year span, suitable for student growth percentile (SGP) and percentile growth projection/trajectory analyses. The data are missing 2020, to help model COVID-related interruptions to student growth. Each record is one student in one year in one content area.
+
+## Note
+
+Use long format like this with the higher level SGP functions `prepareSGP()`, `analyzeSGP()`, `combineSGP()`, `summarizeSGP()`, `visualizeSGP()` and `outputSGP()`.
+
+## Examples
+
+``` R
+head(sgpData_LONG_COVID)
+```
+
+## See Also
+
+[sgpData_LONG](sgpData_LONG.html)
+

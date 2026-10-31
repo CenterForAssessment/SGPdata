@@ -29,24 +29,24 @@ vignette: >
 
 # Introduction
 
-The **SGPdata** package contains 4 examplar data set for use with [student growth percentile (SGP)](https://sgp.io) analyses.
+The **SGPdata** package contains 5 exemplar data sets for use with [student growth percentile (SGP)](https://sgp.io) analyses.
 One of the data sets, `sgpData`, specifies data in the WIDE format that's used with the lower level [SGP](https://sgp.io) functions
-`studentGrowthPercentiles` and `studentGrowthProjections`. Two of the data sets, `sgpData_LONG` and `sgptData_LONG`
+`studentGrowthPercentiles` and `studentGrowthProjections`. Three of the data sets, `sgpData_LONG`, `sgpData_LONG_COVID` and `sgptData_LONG`
 specify data in the LONG format used by higher level functions like `abcSGP`, `prepareSGP`, and `analyzeSGP`. The
 last data set, `sgpData_INSTRUCTOR_NUMBER` is a teacher-student lookup table utilized to produce teacher level aggregates.
-The sections that follow discuss each of the 4 data sets in greater depth.
+The sections that follow discuss each of the 5 data sets in greater depth.
 
 
 # WIDE data format: sgpData
 
-The data set `sgpData` is an anonymized, panel data set comprisong 5 years of annual, vertically scaled, assessment data in WIDE format. This exemplar data set
+The data set `sgpData` is an anonymized, panel data set comprising 5 years of annual, vertically scaled, assessment data in WIDE format. This exemplar data set
 models the format for data used with the lower level [`studentGrowthPercentiles`](https://sgp.io/reference/studentGrowthPercentiles.html) and
 [`studentGrowthProjections`](https://sgp.io/reference/studentGrowthProjections.html) functions.
 
 ```{r}
 head(sgpData)
 ```
-The Wide data format illustrated by `sgpData` and utilized by the SGP package can accomodate any number of occurrences but must follow a specific column order.
+The Wide data format illustrated by `sgpData` and utilized by the SGP package can accommodate any number of occurrences but must follow a specific column order.
 Variable names are irrelevant, position in the data set is what's important:
 
 * The first column *must* provide a unique student identifier.
@@ -58,7 +58,7 @@ In `sgpData` above, the first column, *ID*, provides the unique student identifi
 *SS_2017*, provide the scale scores associated with the student in each of the 5 years. In most cases the student does not have 5 years of test data so the data
 shows the missing value (NA).
 
-Using wide-format data like `sgpData` with the SGP package is, in general, straight forward.
+Using wide-format data like `sgpData` with the SGP package is, in general, straightforward.
 
 ```
 > sgp_g4 <- studentGrowthPercentiles(
@@ -73,7 +73,7 @@ Please consult [SGP package documentation](https://sgp.io) for more comprehensiv
 
 # LONG data format: sgpData_LONG
 
-The data set `sgpData_LONG` is an anonymized, panel data set comprising 5 years of annual, vertcially scaled, assessment data in LONG format for two content areas
+The data set `sgpData_LONG` is an anonymized, panel data set comprising 5 years of annual, vertically scaled, assessment data in LONG format for two content areas
 (ELA and Mathematics). This exemplar data set models the format for data used with the higher level functions
 [`abcSGP`](https://sgp.io/reference/abcSGP.html), [`prepareSGP`](https://sgp.io/reference/prepareSGP.html),
 [`analyzeSGP`](https://sgp.io/reference/analyzeSGP.html), [`combineSGP`](https://sgp.io/reference/combineSGP.html),
@@ -86,7 +86,7 @@ head(sgpData_LONG)
 We recommend LONG formated data for use with operational analyses. Managing data in long format is more simple than data in the wide format. For example,
 when updating analyses with another year of data, the data is appended onto the bottom of the currently existing long data set. All higher level
 functions in the SGP package are designed for use with LONG format data. In addition, these functions often assume the existence of state specific meta-data
-in the embedded [SGPstateData](https://github.com/CenterForAssessment/SGPstateData) meta-data. See the SGP package documentation](https://sgp.io) for more
+in the embedded [SGPstateData](https://github.com/CenterForAssessment/SGPstateData) meta-data. See the [SGP package documentation](https://sgp.io) for more
 comprehensive documentation on how to use `sgpData` for SGP calculations.
 
 
@@ -95,12 +95,23 @@ and `ACHIEVEMENT_LEVEL` (on required if running student growth projections). `LA
 growth and achievement plots. All other variables are demographic/student categorization variables used for creating student aggregates by the
 [`summarizeSGP`](https://sgp.io/reference/summarizeSGP.html) function.
 
-The `sgpData_LONG` data set contains data for 5 years across 2 content areas (ELA and Mathematics)
+The `sgpData_LONG` data set contains data for 5 years across 2 content areas (Reading and Mathematics).
+
+# LONG data format with a COVID-19 interruption: sgpData_LONG_COVID
+
+The data set `sgpData_LONG_COVID` is an anonymized, panel data set in LONG format for two content areas (ELA and Mathematics). It covers seven years across an
+eight year span and has **no 2020 data**, mirroring the cancellation of spring testing in the United States. Use it to model how an interrupted year affects growth.
+The variable `SCALE_SCORE_without_COVID_IMPACT` keeps the original scale score from before the impact was applied.
+
+```{r}
+head(sgpData_LONG_COVID)
+table(sgpData_LONG_COVID$YEAR)
+```
 
 # LONG data format with time: sgptData_LONG
 
-The data set `sgptData_LONG` is an anonymized, panel data set comprising 8 windows (3 windows annually) of assessment data in LONG format for 3 content areas
-(Early Literacy, Mathematics, and Reading). This data set is similar to the `sgpData_LONG` data set without the demographic variables and with an additional `DATE`
+The data set `sgptData_LONG` is an anonymized, panel data set comprising 9 windows (3 windows annually over 3 years) of assessment data in LONG format for several content areas
+(Early Literacy, Mathematics, Reading, and their Spanish and unified counterparts). This data set is similar to the `sgpData_LONG` data set without the demographic variables and with an additional `DATE`
 variable indicating the date associated with the student assessment record.
 
 
@@ -112,7 +123,7 @@ head(sgptData_LONG)
 
 # LONG teacher-student lookup: sgpData_INSTRUCTOR_NUMBER
 
-The data set `sgpData_INSTRUCTOR_NUMBER` is an anonymized, student-instructor lookup table that provides insturctor information associated with each students test record.
+The data set `sgpData_INSTRUCTOR_NUMBER` is an anonymized, student-instructor lookup table that provides instructor information associated with each students test record.
 Note that just as each teacher can (and will) have more than 1 student associated with them, a student can have more than one teacher associated with their test
 record. That is, multiple teachers could be assigned to the student in a single content area for a given year.
 

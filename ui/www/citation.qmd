@@ -1,0 +1,47 @@
+---
+title: "Citation and authors"
+toc: false
+---
+
+## Citation
+
+To cite this package in publications, please use:
+
+Betebenner DW, Van Iwaarden AR, Domingue B (2026). _SGPdata: Exemplar Data Sets for Student Growth
+Percentiles (SGP) Analyses._. R package version 29.0-0.0, <https://centerforassessment.github.io/SGPdata/>.
+
+A BibTeX entry:
+
+```bibtex
+@Manual{,
+  title = {{SGPdata}: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses.},
+  author = {Damian W. Betebenner and Adam R. {Van Iwaarden} and Benjamin Domingue},
+  year = {2026},
+  note = {R package version 29.0-0.0},
+  url = {https://centerforassessment.github.io/SGPdata/},
+}
+```
+
+## Authors
+
+- Damian W. (aut, cre)
+- Betebenner (aut, cre)
+- aut, cre (aut, cre)
+- dbetebenner@nciea.org (aut, cre)
+- NULL (aut, cre)
+- Adam R. (aut)
+- Van Iwaarden (aut)
+- aut (aut)
+- avaniwaarden@nciea.com (aut)
+- NULL (aut)
+- Ben (aut)
+- Domingue (aut)
+- aut (aut)
+- ben.domingue@gmail.com (aut)
+- NULL (aut)
+- Center for Assessment (cph)
+- NULL (cph)
+- cph (cph)
+- NULL (cph)
+- NULL (cph)
+

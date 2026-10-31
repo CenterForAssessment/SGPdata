@@ -1,0 +1,86 @@
+---
+title: "sgptData_LONG"
+subtitle: "Longitudinal student assessment data in LONG format with DATE for SGPt analyses"
+toc: true
+---
+
+## Format
+
+A `data.table` of student-level observations for nine year/window periods (three per year) and several content areas with 13 variables:
+
+`VALID_CASE`
+
+:   Whether the case is valid or invalid
+
+`CONTENT_AREA`
+
+:   Content area associated with the test record
+
+`YEAR`
+
+:   Year and window associated with the test record, such as `⁠2023_2024.2⁠`{style="white-space: pre;"}
+
+`ID`
+
+:   Unique student identifier associated with the test record
+
+`GRADE`
+
+:   Grade associated with the test record
+
+`DATE`
+
+:   Date of the test record, a `Date`
+
+`SCALE_SCORE`
+
+:   Scale score associated with the test record
+
+`SCALE_SCORE_RASCH`
+
+:   Rasch score associated with the test record
+
+`SCALE_SCORE_CSEM`
+
+:   Standard error of measurement of the scale score
+
+`SCALE_SCORE_RASCH_CSEM`
+
+:   Standard error of measurement of the Rasch score
+
+`COUNTRY`
+
+:   Country associated with the test record
+
+`STATE`
+
+:   State associated with the test record
+
+`ACHIEVEMENT_LEVEL`
+
+:   Achievement level associated with the scale score
+
+## Source
+
+Anonymised student level interim assessment data in LONG format.
+
+## Usage
+
+``` R
+sgptData_LONG
+```
+
+## Description
+
+A subset of three years, with three testing windows each, of interim assessment early literacy, reading and mathematics data, suitable for time dependent student growth percentile (SGPt) and percentile growth projection/trajectory analyses. Each record is one student in one year/window in one content area. The data are used in examples to show how SGPt can be used across years to produce visualisations at the aggregate (for example, school) and individual level.
+
+## Examples
+
+``` R
+head(sgptData_LONG)
+```
+
+## See Also
+
+[sgpData_LONG](sgpData_LONG.html)
+

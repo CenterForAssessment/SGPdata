@@ -1,0 +1,82 @@
+---
+title: "sgpData"
+subtitle: "Longitudinal student assessment data in WIDE format"
+toc: true
+---
+
+## Format
+
+A `data.table` of student-level observations for five years with 11 variables:
+
+`ID`
+
+:   Student ID
+
+`GRADE_2021`
+
+:   Student Grade Tested 2021, possibly missing
+
+`GRADE_2022`
+
+:   Student Grade Tested 2022, possibly missing
+
+`GRADE_2023`
+
+:   Student Grade Tested 2023, possibly missing
+
+`GRADE_2024`
+
+:   Student Grade Tested 2024, possibly missing
+
+`GRADE_2025`
+
+:   Student Grade Tested 2025, possibly missing
+
+`SS_2021`
+
+:   Student Scale Score 2021, possibly missing
+
+`SS_2022`
+
+:   Student Scale Score 2022, possibly missing
+
+`SS_2023`
+
+:   Student Scale Score 2023, possibly missing
+
+`SS_2024`
+
+:   Student Scale Score 2024, possibly missing
+
+`SS_2025`
+
+:   Student Scale Score 2025, possibly missing
+
+## Source
+
+Anonymised student level state assessment data.
+
+## Usage
+
+``` R
+sgpData
+```
+
+## Description
+
+A subset of five years of anonymised state assessment reading data, suitable for student growth percentile and percentile growth projection/trajectory analyses. It is used in the examples for `studentGrowthPercentiles()` and `studentGrowthProjections()` in the SGP package, and shows how to build your own data set for growth percentile analyses.
+
+## Note
+
+Data used with `studentGrowthPercentiles()` and `studentGrowthProjections()` must be in *wide* format. The first column is the student ID. The next set of columns give the student's grade in each year (possibly missing). The last set give the scale scores for those grades. Multi-year operational analyses are easier with long format; see [sgpData_LONG](sgpData_LONG.html).
+
+## Examples
+
+``` R
+head(sgpData)
+```
+
+## See Also
+
+[sgpData_LONG](sgpData_LONG.html)
+

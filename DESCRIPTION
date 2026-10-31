@@ -1,20 +1,23 @@
 Package: SGPdata
-Type: Package
 Title: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses
-Version: 28.9-4.0
-Date: 2025-5-21
-Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
-            person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@nciea.com", role="aut"),
-            person(given="Ben", family="Domingue", email="ben.domingue@gmail.com", role="aut"))
-Maintainer: Damian W. Betebenner <dbetebenner@nciea.org>
-Depends: R (>= 4.0)
-Suggests: SGP (>= 1.9-0.0), knitr, rmarkdown
-Imports: crayon, data.table (>= 1.14.0), pkgsearch, toOrdinal
-Description:  Data sets utilized by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses.
+Version: 29.0-0.0
+Date: 2026-10-31
+Authors@R: c(
+    person("Damian W.", "Betebenner", email = "dbetebenner@nciea.org", role = c("aut", "cre")),
+    person("Adam R.", "Van Iwaarden", email = "avaniwaarden@nciea.com", role = "aut"),
+    person("Ben", "Domingue", email = "ben.domingue@gmail.com", role = "aut"),
+    person("Center for Assessment", role = "cph"))
+Depends: R (>= 4.1)
+Imports: cli, data.table (>= 1.14.0), toOrdinal (>= 1.4-0.0), utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Description: Data sets used by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses: wide and long format data sets for fixed-time and time-dependent analyses, a data set with the 2020 COVID-19 interruption, and an instructor-student lookup table for teacher level summaries.
 URL: https://CenterForAssessment.github.io/SGPdata/, https://github.com/CenterForAssessment/SGPdata/, https://cran.r-project.org/package=SGPdata
 BugReports: https://github.com/CenterForAssessment/SGPdata/issues/
 VignetteBuilder: knitr
-LazyLoad: Yes
-LazyData: Yes
+Encoding: UTF-8
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+LazyData: true
 LazyDataCompression: xz
 License: GPL-3
+Config/roxygen2/version: 8.1.0

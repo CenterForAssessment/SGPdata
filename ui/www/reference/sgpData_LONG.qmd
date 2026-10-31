@@ -1,0 +1,130 @@
+---
+title: "sgpData_LONG"
+subtitle: "Longitudinal student assessment data in LONG format"
+toc: true
+---
+
+## Format
+
+A `data.table` of student-level observations for five years and two content areas with 23 variables:
+
+`VALID_CASE`
+
+:   Indicator of whether the case is valid or invalid
+
+`CONTENT_AREA`
+
+:   Content area for student observation (Reading or Mathematics)
+
+`YEAR`
+
+:   Year for student observation
+
+`ID`
+
+:   Unique Student Identification Number
+
+`LAST_NAME`
+
+:   Student last name
+
+`FIRST_NAME`
+
+:   Student first name
+
+`GRADE`
+
+:   Grade level of student observation
+
+`SCALE_SCORE`
+
+:   Student Scale Score
+
+`ACHIEVEMENT_LEVEL`
+
+:   Achievement level associated with student scale score
+
+`GENDER`
+
+:   Student gender
+
+`ETHNICITY`
+
+:   Student ethnicity
+
+`FREE_REDUCED_LUNCH_STATUS`
+
+:   Student free/reduced lunch status
+
+`ELL_STATUS`
+
+:   Student English Language Learner status
+
+`IEP_STATUS`
+
+:   Student Individual Education Plan status
+
+`GIFTED_AND_TALENTED_PROGRAM_STATUS`
+
+:   Student Gifted and Talented Program status
+
+`SCHOOL_NUMBER`
+
+:   School number associated with student record
+
+`SCHOOL_NAME`
+
+:   School name associated with school number and student record
+
+`EMH_LEVEL`
+
+:   Elementary, Middle, High school indicator for school attended
+
+`DISTRICT_NUMBER`
+
+:   District number associated with student record
+
+`DISTRICT_NAME`
+
+:   District name associated with school number and student record
+
+`SCHOOL_ENROLLMENT_STATUS`
+
+:   Indicator of full academic year student enrollment in school
+
+`DISTRICT_ENROLLMENT_STATUS`
+
+:   Indicator of full academic year student enrollment in district
+
+`STATE_ENROLLMENT_STATUS`
+
+:   Indicator of full academic year student enrollment in state
+
+## Source
+
+Anonymised student level state assessment data in LONG format.
+
+## Usage
+
+``` R
+sgpData_LONG
+```
+
+## Description
+
+A subset of five years of anonymised state assessment reading and mathematics data, suitable for student growth percentile (SGP) and percentile growth projection/trajectory analyses. Each record is one student in one year in one content area. The data illustrate, throughout the documentation, how SGPs can be used across years to produce visualisations at the aggregate (for example, school) and individual level.
+
+## Note
+
+Use long format like this with the higher level SGP functions `prepareSGP()`, `analyzeSGP()`, `combineSGP()`, `summarizeSGP()`, `visualizeSGP()` and `outputSGP()`. The lower level functions need wide format; see [sgpData](sgpData.html).
+
+## Examples
+
+``` R
+head(sgpData_LONG)
+```
+
+## See Also
+
+[sgpData](sgpData.html), [sgpData_LONG_COVID](sgpData_LONG_COVID.html), [sgptData_LONG](sgptData_LONG.html)
+
