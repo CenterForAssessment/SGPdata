@@ -1,6 +1,6 @@
 ---
 title: "SGPdata 27.0-0.0"
-date: "October 17th, 2023"
+date: "2023-10-17"
 toc: true
 ---
 

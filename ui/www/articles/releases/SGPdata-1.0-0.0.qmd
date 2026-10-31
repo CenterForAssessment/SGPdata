@@ -1,6 +1,6 @@
 ---
 title: "SGPdata 1.0-0.0"
-date: "January 10th, 2012"
+date: "2012-01-10"
 toc: true
 ---
 
