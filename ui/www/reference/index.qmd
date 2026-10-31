@@ -1,0 +1,36 @@
+---
+title: "Reference"
+toc: false
+---
+
+## Data sets for lower level SGP functions
+
+Wide data for studentGrowthPercentiles() and studentGrowthProjections().
+
+::: {.reference-index}
+
+[`sgpData`](sgpData.html)
+:   Longitudinal student assessment data in WIDE format
+
+:::
+
+## Data sets for higher level SGP functions
+
+Long data for abcSGP(), prepareSGP(), analyzeSGP() and friends.
+
+::: {.reference-index}
+
+[`sgpData_LONG`](sgpData_LONG.html)
+:   Longitudinal student assessment data in LONG format
+
+[`sgpData_LONG_COVID`](sgpData_LONG_COVID.html)
+:   Longitudinal student assessment data in LONG format with the 2020 COVID-19 interruption
+
+[`sgptData_LONG`](sgptData_LONG.html)
+:   Longitudinal student assessment data in LONG format with DATE for SGPt analyses
+
+[`sgpData_INSTRUCTOR_NUMBER`](sgpData_INSTRUCTOR_NUMBER.html)
+:   Lookup table associating INSTRUCTOR_NUMBER with student ID by YEAR and CONTENT_AREA
+
+:::
+

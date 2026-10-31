@@ -1,3 +1,13 @@
+# SGPdata 29.0-0.0
+
+* Updated the data sets to 2024_2025: `sgpData` (`GRADE_2021`-`GRADE_2025`, `SS_2021`-`SS_2025`), `sgpData_LONG` and `sgpData_INSTRUCTOR_NUMBER` (`YEAR` 2020_2021 to 2024_2025).
+* Extended `sgptData_LONG` to nine year/window periods, 2022_2023.1 to 2024_2025.3.
+* Added tests that pin every data set: its shape, its column names and classes, a per-column checksum and the agreement between the data and its documentation. `data-raw/fingerprint.R` refreshes the golden values after a deliberate data change.
+* Documentation is generated with roxygen2 and now covers `sgpData_LONG_COVID` in the reference listing. A `sgptData_LONG` description that said "five years and two content areas" now describes its three years and several content areas.
+* The startup banner appears only in interactive sessions, waits at most two seconds for each web request and can be switched off with `options(SGPdata.startup_message = FALSE)` or `SGPDATA_QUIET=true`. It no longer needs **pkgsearch**, and **cli** replaces **crayon**.
+* A new website built with Quarto at <https://centerforassessment.github.io/SGPdata/>.
+* Requires R 4.1 or later.
+
 # SGPdata 28.0-0.0
 
 * Updating YEAR to 2023_2024

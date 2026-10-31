@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "SGPdata: Exemplar Data Sets for Student Growth Percentiles (SGP) Analyses"
+version: 29.0-0.0
+date-released: 2026-10-31
+license: GPL-3.0-only
+url: "https://centerforassessment.github.io/SGPdata/"
+repository-code: "https://github.com/CenterForAssessment/SGPdata"
+authors:
+  - family-names: "Betebenner"
+    given-names: "Damian W."
+    orcid: "https://orcid.org/0000-0003-0476-5599"
+  - family-names: "Van Iwaarden"
+    given-names: "Adam R."
+  - family-names: "Domingue"
+    given-names: "Ben"

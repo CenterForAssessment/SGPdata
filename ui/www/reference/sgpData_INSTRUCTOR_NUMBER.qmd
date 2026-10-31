@@ -1,0 +1,66 @@
+---
+title: "sgpData_INSTRUCTOR_NUMBER"
+subtitle: "Lookup table associating INSTRUCTOR_NUMBER with student ID by YEAR and CONTENT_AREA"
+toc: true
+---
+
+## Format
+
+A `data.table` with 8 variables:
+
+`ID`
+
+:   Unique Student Identification Number
+
+`CONTENT_AREA`
+
+:   Content area for student/teacher record (Reading or Mathematics)
+
+`YEAR`
+
+:   Year for student/teacher record
+
+`INSTRUCTOR_NUMBER`
+
+:   Unique instructor number identifier
+
+`INSTRUCTOR_LAST_NAME`
+
+:   Instructor last name
+
+`INSTRUCTOR_FIRST_NAME`
+
+:   Instructor first name
+
+`INSTRUCTOR_WEIGHT`
+
+:   Proportional weight associated with student/teacher record
+
+`INSTRUCTOR_ENROLLMENT_STATUS`
+
+:   Indicator of full enrollment status of student with teacher
+
+## Source
+
+Anonymised student/teacher lookup table in LONG format.
+
+## Usage
+
+``` R
+sgpData_INSTRUCTOR_NUMBER
+```
+
+## Description
+
+A lookup table that attaches an instructor to each student's test record for five years of state assessment reading and mathematics data. It is in LONG format with one record per teacher, student, year and content area. A teacher has many students, and a student can have more than one teacher for a content area in a year. Use it to produce teacher level aggregates.
+
+## Examples
+
+``` R
+head(sgpData_INSTRUCTOR_NUMBER)
+```
+
+## See Also
+
+[sgpData_LONG](sgpData_LONG.html)
+
