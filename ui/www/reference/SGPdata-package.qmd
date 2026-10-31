@@ -6,7 +6,7 @@ toc: true
 
 ## Description
 
-![logo](../help/figures/logo.svg){style="float: right" width="120"}
+![logo](../assets/figures/logo.svg){style="float: right" width="120"}
 
 Data sets used by the 'SGP' package as exemplars for users to conduct their own student growth percentiles (SGP) analyses: wide and long format data sets for fixed-time and time-dependent analyses, a data set with the 2020 COVID-19 interruption, and an instructor-student lookup table for teacher level summaries.
 
