@@ -21,7 +21,7 @@ test_that("every column is documented, and every documented column exists", {
   db <- tryCatch(tools::Rd_db("SGPdata"), error = function(e) NULL)
   skip_if(is.null(db) || length(db) == 0L, "Rd database not available (package not installed)")
   for (nm in sets) {
-    rd <- paste(as.character(db[[paste0(nm, ".Rd")]]), collapse = "\n")
+    rd <- paste(as.character(db[[paste0(nm, ".Rd")]]), collapse = "")
     documented <- regmatches(rd, gregexpr("(?<=\\\\item\\{\\\\code\\{)[^}]+", rd, perl = TRUE))[[1]]
     expect_setequal(documented, names(get(nm)))
   }
